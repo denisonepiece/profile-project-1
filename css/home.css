@@ -245,7 +245,37 @@ body {
 }
 
 .images-cell {
+
+}
+
+.images-bg {
 	margin-bottom: 35px;
+	background-color: black;
+	position: relative;
+}
+
+.cross-link {
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	width: 40px;
+	height: 40px;
+	z-index: 1000;
+}
+
+.cross-icon {
+	left: 50%;
+	top: 45%;
+	background: #cfcfcf;
+	height: 40px; width: 2px;
+	position: absolute;
+}
+.cross-icon:after {
+	content: "";
+	height: 2px; width: 40px;
+	background: #cfcfcf;
+	position: absolute;
+	left: -20px; top: 20px;
 }
 
 .load-more {
@@ -274,7 +304,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0px -3px 4.75px 0.25px rgba(163, 163, 163, 0.1);
-  	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
 }
 
 .footer-logo {

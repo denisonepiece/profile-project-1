@@ -14,6 +14,15 @@ $( ".hover-btn" ).hover(
 		$(this).css("cursor", "pointer");
 	}, function() {
 		$(this).attr("src", "images/prev.svg");
+	}
+);
 
+$( ".images-bg" ).hover( 
+	function() {
+		$(this).find(".images-cell").css("opacity", ".5");
+		$(this).append("<div class='cross-icon'></div>")
+	}, function() {
+		$(this).find(".cross-icon").remove("");
+		$(this).find(".images-cell").css("opacity", "1");
 	}
 );
