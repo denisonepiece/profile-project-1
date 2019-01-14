@@ -118,10 +118,10 @@ body {
 	font-weight: 300;
 	color: white;
 	background-color: black;
-	/*padding: 0px 90px 0px 90px;*/
+	padding: 0px 90px 0px 90px;
 	letter-spacing: 5px;
 	margin-bottom: 35px;
-	width: 43vw;
+	width: 45vw;
 }
 
 .slide-sub {
@@ -252,6 +252,7 @@ body {
 	margin-bottom: 35px;
 	background-color: black;
 	position: relative;
+	width: 360px
 }
 
 .cross-link {
@@ -352,15 +353,140 @@ footer {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
+	text-align: center;
 }
 
 .black {
 	color:black;
 }
 
+.menu-btn {
+	display: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: relative;
+}
+
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+	position: absolute;
+	top: 50%;	margin-top: -1px;
+	left: 50%;	margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+	content: '';
+	display: block;
+	transition: 0.3s;
+}
+
+.menu-btn span::before {
+	transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+	transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+	transform: rotate(45deg);
+}
+
+.menu-btn_active span {
+	height: 0px;
+}
+
+.menu-btn_active span:after {
+	transform: rotate(-45deg);
+}
 
 /* Footer end */
 
+@media screen and (max-width: 1158px) {
 
+	.images-row {
+		flex-direction: column;
+	}
+
+	.col-center {
+		margin:0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.navigation {
+		justify-content: space-between;
+	}
+
+	.menu-btn {
+		margin-right: 50px;
+	}
+
+	.logo {
+		margin-left:50px;
+	}
+
+	.nav-items {
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+
+	.slide-dir {
+		width: auto;
+	}
+
+	.slide-sub {
+		height: 50px;
+	}
+
+	#prev-btn, #next-btn {
+		top: calc(65% - 25px);
+	}
+	#prev-btn {
+		left: 25px;
+	}
+	#next-btn {
+		right: 25px;
+	}
+
+	.images-row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.tab-nav ul {
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.tab-nav ul li {
+		padding: 20px 20px 20px 20px;
+	}
+
+	.slash {
+		display: none;
+	}
+
+	.footer-social ul {
+		width:50vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.slide-dir {
+		font-size: 34px;
+	}
+}
 
 

@@ -26,3 +26,9 @@ $( ".images-bg" ).hover(
 		$(this).find(".images-cell").css("opacity", "1");
 	}
 );
+
+$('.menu-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+});
+

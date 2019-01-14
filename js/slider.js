@@ -5,6 +5,24 @@ var navBtnId = 0;
 var translateWidth = 0;
 var slideCurrent = 0;
 
+// SCROLL SIZE START
+var div = document.createElement('div');
+
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px';
+
+// при display:none размеры нельзя узнать
+// нужно, чтобы элемент был видим,
+// visibility:hidden - можно, т.к. сохраняет геометрию
+div.style.visibility = 'hidden';
+
+document.body.appendChild(div);
+var scrollWidth = div.offsetWidth - div.clientWidth;
+document.body.removeChild(div);
+// SCROLL SIZE END
+
+
 
 $(document).ready(function() {
     selectBtn();
@@ -60,7 +78,7 @@ function nextSlide() {
         $('#slidewrapper').css('transform', 'translate(0, 0)');
         slideNow = 1;
     } else {
-        translateWidth = -$('#viewport').width() * (slideNow);
+        translateWidth = -$('#viewport').width() * (slideNow) - scrollWidth;
         $('#slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -74,7 +92,7 @@ function nextSlide() {
 
 function prevSlide() {
     if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-        translateWidth = -$('#viewport').width() * (slideCount - 1);
+        translateWidth = -$('#viewport').width() * (slideCount - 1) - scrollWidth;
         $('#slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
