@@ -1,13 +1,4 @@
-// $( "li" ).hover( 
-// 	function() {
-// 		$(this).css("color", "black");
-// 		$( this ).find( ".line" ).css("background-color", "black");
-// 	}, function() {
-// 		$(this).css("color", "grey");
-// 		$( this ).find( ".line" ).css("background-color", "white");
-// 	}
-// );
-
+// slider buttons
 $( ".hover-btn" ).hover( 
 	function() {
 		$(this).attr("src", "images/prev-hover.svg");
@@ -17,6 +8,7 @@ $( ".hover-btn" ).hover(
 	}
 );
 
+// hover gallery
 $( ".images-bg" ).hover( 
 	function() {
 		$(this).find(".images-cell").css("opacity", ".5");
@@ -27,8 +19,11 @@ $( ".images-bg" ).hover(
 	}
 );
 
+
+// nav-menu
 $('.menu-btn').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('menu-btn_active');
+  $('.nav-modal').toggleClass('active');
 });
 
