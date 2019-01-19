@@ -1,12 +1,12 @@
-$( "li" ).hover( 
-	function() {
-		$(this).css("color", "black");
-		$( this ).find( ".line" ).css("background-color", "black");
-	}, function() {
-		$(this).css("color", "grey");
-		$( this ).find( ".line" ).css("background-color", "white");
-	}
-);
+// $( "li" ).hover( 
+// 	function() {
+// 		$(this).css("color", "black");
+// 		$( this ).find( ".line" ).css("background-color", "black");
+// 	}, function() {
+// 		$(this).css("color", "grey");
+// 		$( this ).find( ".line" ).css("background-color", "white");
+// 	}
+// );
 
 $( ".hover-btn" ).hover( 
 	function() {
