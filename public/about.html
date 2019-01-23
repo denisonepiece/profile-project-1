@@ -6,7 +6,8 @@
 	<title>lian</title>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -14,25 +15,115 @@
 </head>
 <body>
 	<header>
-		<nav class="navigation">
+		<nav class="navigation navigation-responsive">
 			<div class="logo">
-				<a href="#"><img src="images/logo.jpg"></a>
+				<a href="index.html"><img src="images/logo.jpg"></a>
 			</div>
 			<div class="nav-items">
 				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="portfolio.html">portfolio</a></li>
-					<li><a href="blog.html">blog</a></li>
-					<li><a href="contet.html">contet</a></li>
+					<li><a href="index.html" class="nav-link">home</a></li>
+					<li><a href="about.html" class="nav-link">about</a></li>
+					<li><a href="portfolio.html" class="nav-link">portfolio</a></li>
+					<li><a href="blog.html" class="nav-link">blog</a></li>
+					<li><a href="contet.html" class="nav-link">contet</a></li>
 					<img class="search-icon" src="images/search.jpg">
 				</ul>
 			</div>
-			<a href="#" class="menu-btn"><span></span></a>
+			<a class="menu-btn"><span></span></a>
 		</nav>
+		<!-- Modal window navigation -->
+		<div class="nav-modal">
+			<div class="nav-modal-items">
+				<ul>
+					<li><a href="index.html" class="nav-link">home</a></li>
+					<li><a href="about.html" class="nav-link">about</a></li>
+					<li><a href="portfolio.html" class="nav-link">portfolio</a></li>
+					<li><a href="blog.html" class="nav-link">blog</a></li>
+					<li><a href="contet.html" class="nav-link">contet</a></li>
+					<img class="search-icon" src="images/search.jpg">
+				</ul>
+			</div>
+		</div>
 	</header>
 	<main class="body">	
-
+		<div class="header">
+			<div class="header-content">
+				<h1 class="header-dir">about the agency</h1>
+				<p class="header-sub">welcome to lian</p>
+			</div>
+			<div></div>
+		</div>
+		<section class="main"> 
+			<div class="row">
+				<div class="column-left"><img src="images/about/about.jpg"></div>
+				<div class="column-right">
+					 <div class="main-sub">
+					 	<h1 class="main-h1">our story</h1>
+					 	<p class="main-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					 	consequat.</p>
+					 	<p class="main-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					 	consequat.</p>
+					 </div>
+					 <div class="main-sub_down">
+					 	<h1 class="main-h1">our skills</h1>
+					 	<p>Photoshop</p>
+					 	<input type="range" min="0" max="100" value="90">
+					 	<p>Branding</p>
+					 	<input type="range" min="0" max="100" value="95">
+					 	<p>Photography</p>
+					 	<input type="range" min="0" max="100" value="70">
+					 	<p>Web Design</p>
+					 	<input type="range" min="0" max="100" value="80">
+					 </div>
+				</div>
+			</div>
+		</section>
+		<section class="team">
+			<div class="team-header">
+				<h1>awesome team</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere obcaecati consequuntur laudantium quam repellendus rerum autem nam voluptate a, cum, velit, aliquam nihil nobis voluptates in pariatur, eligendi corporis? Quaerat.</p>
+			</div>
+			<div class="team-persons">
+				<div class="center">
+					<div class="person">
+					<div class="person-photo" style="background-image: url(images/about/1.png);"></div>
+					<div class="person-about">
+						<h3 class="person-name">Lian joy</h3>
+						<p class="person-prof">Ceo/Founder</p>
+						<p class="person-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur provident omnis praesentium assumenda placeat optio.</p>
+					</div>
+				</div>
+				<div class="person">
+					<div class="person-photo" style="background-image: url(images/about/1.png);"></div>
+					<div class="person-about">
+						<h3 class="person-name">Lian joy</h3>
+						<p class="person-prof">CEO/Founder</p>
+						<p class="person-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur provident omnis praesentium assumenda placeat optio.</p>
+					</div>
+				</div>
+				<div class="person">
+					<div class="person-photo" style="background-image: url(images/about/1.png);"></div>
+					<div class="person-about">
+						<h3 class="person-name">Lian joy</h3>
+						<p class="person-prof">Ceo/Founder</p>
+						<p class="person-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur provident omnis praesentium assumenda placeat optio.</p>
+					</div>
+				</div>
+				<div class="person">
+					<div class="person-photo" style="background-image: url(images/about/1.png);"></div>
+					<div class="person-about">
+						<h3 class="person-name">Lian joy</h3>
+						<p class="person-prof">Ceo/Founder</p>
+						<p class="person-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur provident omnis praesentium assumenda placeat optio.</p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="footer-logo">
