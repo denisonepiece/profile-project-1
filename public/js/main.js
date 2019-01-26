@@ -19,6 +19,14 @@ $( ".images-bg" ).hover(
 	}
 );
 
+// hover post-image
+$( ".post-img").hover( 
+	function() {
+		$(".post-img .post").css("display", "block");
+	}, function() {
+		$(".post-img .post").css("display", "none");
+	}
+);
 
 // nav-menu
 $('.menu-btn').on('click', function(e) {
@@ -27,3 +35,9 @@ $('.menu-btn').on('click', function(e) {
   $('.nav-modal').toggleClass('active');
 });
 
+
+const player = new Plyr('#player', {
+	controls: [
+    'play-large', // The large play button in the center
+]
+});
