@@ -1,6 +1,5 @@
 .body {
 	background-color: #fafafa;
-	padding-bottom: 100px;
 }
 
 .header {
@@ -290,6 +289,11 @@
 	border-radius: 2px;
 	margin-bottom:75px;
 	margin-top:75px;
+	cursor: pointer;
+	border: none;
+}
+
+a span {
 	text-decoration: none;
 }
 

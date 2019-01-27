@@ -36,8 +36,3 @@ $('.menu-btn').on('click', function(e) {
 });
 
 
-const player = new Plyr('#player', {
-	controls: [
-    'play-large', // The large play button in the center
-]
-});
