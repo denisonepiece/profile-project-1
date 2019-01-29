@@ -124,6 +124,10 @@
 	filter: grayscale(1);
 }
 
+.values {
+	margin-bottom: 65px;
+}
+
 .values-sub {
 	margin-top: 70px;
 }
