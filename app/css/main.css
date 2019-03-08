@@ -1,0 +1,120 @@
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.7em;
+  letter-spacing: .03em; }
+
+h1 {
+  font-size: 3.1em; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 300; }
+
+p, ul {
+  font-size: 2em;
+  letter-spacing: .04em;
+  line-height: 1.8;
+  margin: 0; }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 10px; }
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  font-size: 1.3em; }
+
+.wrapper {
+  max-width: 1170px; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translateY(100%); }
+
+header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  header #cube {
+    position: absolute;
+    top: -36px;
+    right: 90px; }
+  header #scroll {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transition: all 0.5s ease-in-out; }
+  header .header-name {
+    margin-top: 273px;
+    text-transform: uppercase; }
+
+.about .about-info {
+  width: 50%; }
+  .about .about-info ul {
+    padding: 0;
+    list-style: square; }
+
+.about .about-photo {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 48%; }
+  .about .about-photo img {
+    width: 100%;
+    margin-bottom: 25px; }
+
+.about .about-sub {
+  margin-top: 60px; }
+  .about .about-sub a {
+    text-decoration: none;
+    color: #2937f0;
+    font-weight: 500; }
+  .about .about-sub a:hover {
+    text-decoration: underline;
+    color: black; }
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .project .project-alone {
+    width: 49%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    min-width: 320px; }
+    .project .project-alone .project-alone__image img {
+      width: 100%; }
+    .project .project-alone .project-alone__sub h3 {
+      font-size: 2.5em;
+      padding-top: 5%;
+      padding-left: 3%;
+      line-height: 1.1em; }
+    .project .project-alone .project-alone__sub h4 {
+      font-size: 1.8em;
+      font-weight: 300;
+      padding-top: 3%;
+      padding-left: 3%;
+      line-height: 1.1em; }
+    .project .project-alone .project-alone__sub p {
+      font-size: 1.1em;
+      color: #969696;
+      font-weight: 300;
+      font-style: italic;
+      padding-top: 2%;
+      padding-left: 3%; }
+
+footer {
+  margin-bottom: 4.3em; }
