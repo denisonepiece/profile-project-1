@@ -1,4 +1,7 @@
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   line-height: 1.7em;
   letter-spacing: .03em; }
@@ -10,25 +13,23 @@ h2 {
   font-size: 2em;
   font-weight: 300; }
 
-p, ul {
+p,
+ul {
   font-size: 2em;
   letter-spacing: .04em;
-  line-height: 1.8;
-  margin: 0; }
+  line-height: 1.8; }
 
 html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 10px; }
-
-body {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  font-size: 1.3em; }
+  font-size: 13px; }
 
 .wrapper {
-  max-width: 1170px; }
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column; }
 
 .row {
   display: flex;
@@ -43,35 +44,29 @@ body {
   transform: translateY(100%); }
 
 header {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  position: relative; }
   header #cube {
     position: absolute;
-    top: -36px;
-    right: 90px; }
+    right: 8%; }
   header #scroll {
     position: absolute;
     bottom: 20px;
     right: 50%;
     transition: all 0.5s ease-in-out; }
-  header .header-name {
-    margin-top: 273px;
-    text-transform: uppercase; }
+  header .header-title {
+    margin-top: 100px;
+    margin-bottom: 100px; }
 
 .about .about-info {
-  width: 50%; }
+  width: 100%; }
   .about .about-info ul {
-    padding: 0;
-    list-style: square; }
+    list-style: square;
+    padding-left: 23px; }
 
 .about .about-photo {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  width: 48%; }
+  max-width: 500px; }
   .about .about-photo img {
     width: 100%;
     margin-bottom: 25px; }
@@ -90,31 +85,97 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-  .project .project-alone {
-    width: 49%;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    min-width: 320px; }
-    .project .project-alone .project-alone__image img {
-      width: 100%; }
-    .project .project-alone .project-alone__sub h3 {
-      font-size: 2.5em;
-      padding-top: 5%;
-      padding-left: 3%;
-      line-height: 1.1em; }
-    .project .project-alone .project-alone__sub h4 {
-      font-size: 1.8em;
-      font-weight: 300;
-      padding-top: 3%;
-      padding-left: 3%;
-      line-height: 1.1em; }
-    .project .project-alone .project-alone__sub p {
-      font-size: 1.1em;
-      color: #969696;
-      font-weight: 300;
-      font-style: italic;
-      padding-top: 2%;
-      padding-left: 3%; }
+
+.project-alone {
+  width: calc(50% - 20px);
+  text-decoration: none;
+  color: inherit;
+  margin: 3em 0;
+  position: relative;
+  padding: 0 0 20px;
+  box-sizing: border-box;
+  transition: color 0.3s; }
+  .project-alone:hover h3 {
+    color: #2937f0;
+    transition: color 0.3s; }
+    .project-alone:hover h3:after {
+      background-image: url("../img/link-hover.svg"); }
+  .project-alone:hover h4, .project-alone:hover p {
+    color: black;
+    transition: color 0.3s; }
+
+.project-alone__img {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.project-alone__sub h3 {
+  font-size: 2.5em;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+  color: #000;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center; }
+  .project-alone__sub h3:after {
+    content: '';
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background-image: url("../img/link.svg");
+    background-size: contain;
+    margin-left: 10px; }
+
+.project-alone__sub h4 {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.1em;
+  color: #000;
+  transition: color 0.3s; }
+
+.project-alone__sub p {
+  font-size: 1.1em;
+  color: #969696;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0;
+  transition: color 0.3s; }
+
+.project-alone__go-to {
+  display: none;
+  position: absolute;
+  color: black;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  top: calc(50% - 50px); }
+  .project-alone__go-to .right-arrow {
+    height: 100px;
+    margin-left: 10px; }
 
 footer {
   margin-bottom: 4.3em; }
+  footer a {
+    text-decoration: none;
+    color: #2937f0;
+    font-weight: 500; }
+
+@media screen and (max-width: 910px) {
+  #cube {
+    display: none; }
+  header .header-name {
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center; }
+    .project .project-alone {
+      width: 100%; } }
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 10px; }
+  .about .about-info ul {
+    padding-left: 5%; } }

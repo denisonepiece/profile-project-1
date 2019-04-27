@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,612 +10,630 @@
     <!-- <link rel="icon" href="/favicon.ico"> -->
 
     <title>Master Classes</title>
-	
-	<link rel="stylesheet" href="css/jquery-ui.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body> 
-
-	
-	<!-- header -->
-	<header class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="#">
-					Master <span>Classes</span>
-				</a>
-			</div>
-			<!-- /.header__logo -->
-			<div class="mobile">
-				<button class="menu" id="mobile"></button>
-			</div>
-			<div class="header-right">
-				<button class="menu-close"></button>
-				<div class="header-nav">
-					<ul class="header-nav__links">
-						<li><a href="#" class="events">Events</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Sign in</a></li>
-					</ul>
-				</div>
-				<!-- /.header-nav -->
-				<div class="header-account">
-					<button class="header-account__btn">Register</button>
-					<!-- <div class="header-account-user">
-						<a href="#" class="avatar">
-							<img src="images/repository/user.png" alt="avatar">
-						</a>
-						<div class="header-account-user__nav" >
-							<span class="name">Alberto Donko</span>
-							<hr>
-							<ul>
-								<li><a href="#" class="manage">Manage account</a></li>
-								<li><a href="#" class="bookmarked">Bookmarked events</a></li>
-								<li><a href="#"class="out">Sign out</a></li>
-							</ul>
-						</div>
-					</div> -->
-				</div>
-				<!-- /.header-account -->
-				<button class="header__search"><img src="images/search.svg" alt="search"></button>
-			</div>
-			<!-- /.header-right -->
-		</div>
-		<div class="container">
-			<div class="header-content">
-				<h1 class="header-content__head">Master new skills from <br> the best in town</h1>
-				<p class="header-content__description">Workshops are fun + new skill + great mood and bright emotions. Now you always know where to go in St. Petersburg!</p>
-			</div>
-			<!-- /.header-content -->
-			<div class="header-img">
-				<img src="images/header-img.png" alt="master class">
-			</div>
-			<!-- /.header-img -->			
-		</div>
-		<div class="search">
-			<form action="#">
-				<div class="search-content">
-					<div class="search-content-line">
-						<div class="search-block">
-							<label for="interest">interest</label>
-							<select name="interest" id="interest">
-								<option value="#">Drawing</option>
-								<option value="#">Cooking</option>
-								<option value="#">Manual Business</option>
-								<option value="#">Floristics</option>
-								<option value="#">Self development</option>
-								<option value="#">Photography</option>
-								<option value="#">Sport</option>
-						
-								<option value="#">Sport</option>
-								<option value="#">Sport</option>
-							</select>	
-						</div>
-						<div class="search-block district">
-							<label for="district">district</label>
-							<select name="district" id="district">
-								<option value="#">Moscow</option>
-								<option value="#">St. Petersburg</option>
-								<option value="#">Saratov</option>
-								<option value="#">Sevsk</option>
-								<option value="#">Yaroslavl</option>
-								<option value="#">Tula</option>
-								<option value="#">Khabarovsk</option>
-								<option value="#">Tyumen</option>
-								<option value="#">Nizhny Novgorod</option>
-							</select>	
-						</div>
-					</div>
-					<div class="search-content-line">
-						<div class="search-block date">
-							<span>Date</span>
-							<div class="date-input">
-								<input type="text" id="date" autocomplete="off">
-								<span></span>
-							</div>
-						</div>
-						<button class="search__btn">Search</button>
-					</div>
-				</div>
-			</form>
-		</div>		
-	</header>
-	<!-- info -->
-	<section class="info">
-		<div class="container">
-			<div class="info-block">
-				<div class="info-block__img"><img src="images/events.png" alt="50+ Events"></div>
-				<h3 class="info-block__head">50+ Events</h3>
-				<p class="info-block__description">New workshops and events focus on improving your skill set.</p>
-			</div>
-			<div class="info-block">
-				<div class="info-block__img"><img src="images/category.png" alt="12+ Categories"></div>
-				<h3 class="info-block__head">12+ Categories</h3>
-				<p class="info-block__description">Different kind of categories to filter out your interests.</p>
-			</div>
-			<div class="info-block">
-				<div class="info-block__img"><img src="images/certified.png" alt="Certified Classes"></div>
-				<h3 class="info-block__head">Certified Classes</h3>
-				<p class="info-block__description">All class are certified and taken by the best in the industry.</p>
-			</div>
-		</div>
-	</section>
-	<!-- Choose your interest -->
-	<section class="interest">
-		<div class="container">
-			<h2 class="head">Choose your interest</h2>
-		</div>
-		<div class="container">
-			<div class="interest-block drawing">
-				<span></span>
-				<h3 class="interest-block__head">Drawing</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block cooking">
-				<span></span>
-				<h3 class="interest-block__head">Cooking</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block development">
-				<span></span>
-				<h3 class="interest-block__head">Self <br>Development</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block floristics">
-				<span></span>
-				<h3 class="interest-block__head">Floristics</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block manual">
-				<span></span>
-				<h3 class="interest-block__head">Manual <br> Business</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block photo">
-				<span></span>
-				<h3 class="interest-block__head">Photography</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block sport">
-				<span></span>
-				<h3 class="interest-block__head">Sport</h3>
-			</div>
-			<!-- /.interest-block -->	
-			<div class="interest-block beauty">
-				<span></span>
-				<h3 class="interest-block__head">BEAUTY</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block music">
-				<span></span>
-				<h3 class="interest-block__head">MUSIC</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block jewelry">
-				<span></span>
-				<h3 class="interest-block__head">JEWELRY</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block business">
-				<span></span>
-				<h3 class="interest-block__head">BUSINESS</h3>
-			</div>
-			<!-- /.interest-block -->
-			<div class="interest-block misc">
-				<span></span>
-				<h3 class="interest-block__head">MISC</h3>
-			</div>
-			<!-- /.interest-block -->
-		</div>
-		<!-- /.container -->	
-	</section>
-	<!-- Upcoming Events -->
-	<section class="events">
-		<div class="container">
-			<h2 class="head">Upcoming Events</h2>
-			<div class="events-filter">
-				<form action="#">
-					<label for="events-filter">Filter by</label>
-					<select name="events-filter" id="events-filter">
-						<option value="#">This month</option>
-						<option value="#">Last month</option>
-						<option value="#">Next month</option>
-						<option value="#">Next month</option>
-						<option value="#">Next month</option>
-						<option value="#">Next month</option>
-					</select>
-				</form>
-			</div>
-		</div>
-		<div class="container">
-			<div class="events-card">
-				<img src="images/pottery.jpg" alt="pottery">
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">MANUAL BUSINESS</a>
-					<a href="#" class="events-card__head">Pottery master class with painting</a>
-					<p class="events-card__address">By Pottery Studio No. 1<br> Mar 20, 2019</p>
-					<div class="events-card__block">
-						<a href="#" class="bookmarks">Bookmark</a>
-						<span class="price">2300 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/workshop.jpg" alt="workshop">
-				<div class="events-card__label">Online</div>
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Drawing</a>
-					<a href="#" class="events-card__head">Workshop on drawing acrylic and textural paste</a>
-					<p class="events-card__address">By Art & Me <br>Mar 22, 2019</p>
-					<div class="events-card__block">
-						<a href="#" class="bookmarks">Bookmark</a>
-						<span class="price">1900 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/rings.jpg" alt="rings">
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Jewelry</a>
-					<a href="#" class="events-card__head">Jewelry Workshop Wedding Rings</a>
-					<p class="events-card__address">By Rings <br>Mar 23, 2019</p>
-					<div class="events-card__block">
-						<a href="#" class="bookmarks">Bookmark</a>
-						<span class="price">3000 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/art.jpg" alt="art">
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Drawing</a>
-					<a href="#" class="events-card__head">Master class in drawing Pop art from the studio Art & Me</a>
-					<p class="events-card__address">By Art & Me <br>Mar 26, 2019</p>
-					<div class="events-card__block">
-						<a href="#" class="bookmarks">Bookmark</a>
-						<span class="price">800 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/mother-class.jpg" alt="mother-class">
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Floristics</a>
-					<a href="#" class="events-card__head">Mother-class on floristics Collect Bowl without rules..</a>
-					<p class="events-card__address">By Art & Me <br>Mar 26, 2019</p>
-					<div class="events-card__block">
-						<a href="#" class="bookmarks">Bookmark</a>
-						<span class="price">4200 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/illustration.jpg" alt="illustration">
-				<div class="events-card__label">FOR KIDS</div>
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Drawing</a>
-					<a href="#" class="events-card__head">Master class on drawing Space Illustration</a>
-					<p class="events-card__address">By Art & Me <br>Mar 26, 2019</p>
-					<div class="events-card__block">
-						<a href="#" class="bookmarks">Bookmark</a>
-						<span class="price">600 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-big-card">
-				<img src="images/culinary.jpg" alt="culinary">
-				<div class="events-big-card__content">
-					<a href="#" class="events-big-card__section">COOKING</a>
-					<a href="#" class="events-big-card__head">Culinary master class "Bread for two times” by the Chef</a>
-					<p class="events-big-card__description">Come on the last day of Shrovetide for Sunday brunch in the studio Cook Cook Coo. We will bake beautiful and delicious pancakes, make several variations of dough and lots of toppings!</p>
-					<p class="events-big-card__address">By Chef on Mar 26, 2019</p>
-					<div class="events-card__block">
-						<span class="views">1200</span>
-						<span class="price">4300 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-big-card -->
-			<div class="events-card">
-				<img src="images/pottery.jpg" alt="pottery">
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">MANUAL BUSINESS</a>
-					<a href="#" class="events-card__head">Pottery master class with painting</a>
-					<p class="events-card__address">By Pottery Studio No. 1<br> Mar 20, 2019</p>
-					<div class="events-card__block">
-						<span class="views">876</span>
-						<span class="price">2300 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/workshop.jpg" alt="workshop">
-				<div class="events-card__label">Online</div>
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Drawing</a>
-					<a href="#" class="events-card__head">Workshop on drawing acrylic and textural paste</a>
-					<p class="events-card__address">By Art & Me <br>Mar 22, 2019</p>
-					<div class="events-card__block">
-						<span class="views">200</span>
-						<span class="price">1900 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="events-card">
-				<img src="images/rings.jpg" alt="rings">
-				<div class="events-card__content">
-					<a href="#" class="events-card__section">Jewelry</a>
-					<a href="#" class="events-card__head">Jewelry Workshop Wedding Rings</a>
-					<p class="events-card__address">By Rings <br>Mar 23, 2019</p>
-					<div class="events-card__block">
-						<span class="views">788</span>
-						<span class="price">3000 ₽</span>
-					</div>
-				</div>
-			</div>
-			<!-- /.events-card -->
-			<div class="view">
-				<a href="#">View more events</a>
-			</div>
-		</div>
-		<!-- /.container -->
-	</section>
-	<!-- footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-block">
-				<div class="logo">
-					<a href="#">
-						Master <span>Classes</span>
-					</a>
-				</div>
-				<!-- /.logo -->
-				<div class="footer__address">
-					<span>Address line 1</span>
-					<span>Russia</span>
-				</div>
-				<!-- /.footer__address -->
-				<a href="#" class="footer__phone">10909-898-898</a>
-				<span class="footer__copy">Copyright &copy; All rights reserved</span>
-			</div>
-			<!-- /.footer-block -->
-			<div class="footer-block">
-				<div class="footer-nav">
-					<ul>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
-						<li><a href="#">Sitemap</a></li>
-					</ul>
-				</div>
-				<!-- /.footer-nav -->
-			</div>
-			<!-- /.footer-block -->
-			<div class="footer-block">
-				<div class="footer-nav">
-					<ul>
-						<li><a href="#">Partners / Collaboration</a></li>
-						<li><a href="#">Placement on the site</a></li>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Contacts</a></li>
-					</ul>
-				</div>
-				<!-- /.footer-nav -->
-			</div>
-			<!-- /.footer-block -->
-			<div class="footer-block">
-				<div class="footer-social">
-					<ul>
-						<li><a href="#" class="facebook">Facebook</a></li>
-						<li><a href="#" class="twitter">Twitter</a></li>
-						<li><a href="#" class="youtube">Youtube</a></li>
-						<li><a href="#" class="linkedin">Linkedin</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /.footer-block -->
+    <link rel="stylesheet" href="css/update.css">
+</head>
+<body>
 
 
-			<div class="footer-signup">
-				<p class="footer-signup__description">Sign up and start learning today.</p>
-				<button class="footer-signup__btn">Get Started</button>
-			</div>
-		</div>
-		<!-- /.container -->
-	</footer>
+<!-- header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                Master <span>Classes</span>
+            </a>
+        </div>
+        <!-- /.header__logo -->
+        <div class="mobile">
+            <button class="menu" id="mobile"></button>
+        </div>
+        <div class="header-right">
+            <button class="menu-close"></button>
+            <div class="header-nav">
+                <ul class="header-nav__links">
+                    <li><a href="#" class="events">Events</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+            <!-- /.header-nav -->
+            <div class="header-account">
+                <button class="header-account__btn">Register</button>
+                <!-- <div class="header-account-user">
+                    <a href="#" class="avatar">
+                        <img src="images/repository/user.png" alt="avatar">
+                    </a>
+                    <div class="header-account-user__nav" >
+                        <span class="name">Alberto Donko</span>
+                        <hr>
+                        <ul>
+                            <li><a href="#" class="manage">Manage account</a></li>
+                            <li><a href="#" class="bookmarked">Bookmarked events</a></li>
+                            <li><a href="#"class="out">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <!-- /.header-account -->
+            <button class="header__search"><img src="images/search.svg" alt="search"></button>
+        </div>
+        <!-- /.header-right -->
+    </div>
+    <div class="container">
+        <div class="header-content">
+            <h1 class="header-content__head">Master new skills from <br> the best in town</h1>
+            <p class="header-content__description">Workshops are fun + new skill + great mood and bright emotions. Now
+                you always know where to go in St. Petersburg!</p>
+        </div>
+        <!-- /.header-content -->
+        <div class="header-img">
+            <img src="images/header-img.png" alt="master class">
+        </div>
+        <!-- /.header-img -->
+    </div>
+    <div class="search">
+        <form action="#">
+            <div class="search-content">
+                <div class="search-content-line">
+                    <div class="search-block">
+                        <label for="interest">interest</label>
+                        <select name="interest" id="interest">
+                            <option value="#">Drawing</option>
+                            <option value="#">Cooking</option>
+                            <option value="#">Manual Business</option>
+                            <option value="#">Floristics</option>
+                            <option value="#">Self development</option>
+                            <option value="#">Photography</option>
+                            <option value="#">Sport</option>
+
+                            <option value="#">Sport</option>
+                            <option value="#">Sport</option>
+                        </select>
+                    </div>
+                    <div class="search-block district">
+                        <label for="district">district</label>
+                        <select name="district" id="district">
+                            <option value="#">Moscow</option>
+                            <option value="#">St. Petersburg</option>
+                            <option value="#">Saratov</option>
+                            <option value="#">Sevsk</option>
+                            <option value="#">Yaroslavl</option>
+                            <option value="#">Tula</option>
+                            <option value="#">Khabarovsk</option>
+                            <option value="#">Tyumen</option>
+                            <option value="#">Nizhny Novgorod</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-content-line">
+                    <div class="search-block date">
+                        <span>Date</span>
+                        <div class="date-input">
+                            <input type="text" id="date" autocomplete="off">
+                            <span></span>
+                        </div>
+                    </div>
+                    <button class="search__btn">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+<!-- info -->
+<section class="info">
+    <div class="container">
+        <div class="info-block">
+            <div class="info-block__img"><img src="images/events.png" alt="50+ Events"></div>
+            <h3 class="info-block__head">50+ Events</h3>
+            <p class="info-block__description">New workshops and events focus on improving your skill set.</p>
+        </div>
+        <div class="info-block">
+            <div class="info-block__img"><img src="images/category.png" alt="12+ Categories"></div>
+            <h3 class="info-block__head">12+ Categories</h3>
+            <p class="info-block__description">Different kind of categories to filter out your interests.</p>
+        </div>
+        <div class="info-block">
+            <div class="info-block__img"><img src="images/certified.png" alt="Certified Classes"></div>
+            <h3 class="info-block__head">Certified Classes</h3>
+            <p class="info-block__description">All class are certified and taken by the best in the industry.</p>
+        </div>
+    </div>
+</section>
+<!-- Choose your interest -->
+<section class="interest">
+    <div class="container">
+        <h2 class="head">Choose your interest</h2>
+    </div>
+    <div class="container">
+        <div class="interest-block drawing">
+            <span></span>
+            <h3 class="interest-block__head">Drawing</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block cooking">
+            <span></span>
+            <h3 class="interest-block__head">Cooking</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block development">
+            <span></span>
+            <h3 class="interest-block__head">Self <br>Development</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block floristics">
+            <span></span>
+            <h3 class="interest-block__head">Floristics</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block manual">
+            <span></span>
+            <h3 class="interest-block__head">Manual <br> Business</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block photo">
+            <span></span>
+            <h3 class="interest-block__head">Photography</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block sport">
+            <span></span>
+            <h3 class="interest-block__head">Sport</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block beauty">
+            <span></span>
+            <h3 class="interest-block__head">BEAUTY</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block music">
+            <span></span>
+            <h3 class="interest-block__head">MUSIC</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block jewelry">
+            <span></span>
+            <h3 class="interest-block__head">JEWELRY</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block business">
+            <span></span>
+            <h3 class="interest-block__head">BUSINESS</h3>
+        </div>
+        <!-- /.interest-block -->
+        <div class="interest-block misc">
+            <span></span>
+            <h3 class="interest-block__head">MISC</h3>
+        </div>
+        <!-- /.interest-block -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- Upcoming Events -->
+<section class="events">
+    <div class="container">
+        <h2 class="head">Upcoming Events</h2>
+        <div class="events-filter">
+            <form action="#">
+                <label for="events-filter">Filter by</label>
+                <select name="events-filter" id="events-filter">
+                    <option value="#">This month</option>
+                    <option value="#">Last month</option>
+                    <option value="#">Next month</option>
+                    <option value="#">Next month</option>
+                    <option value="#">Next month</option>
+                    <option value="#">Next month</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="events-card swiper-slide">
+                <img src="images/pottery.jpg" alt="pottery">
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">MANUAL BUSINESS</a>
+                    <a href="#" class="events-card__head">Pottery master class with painting</a>
+                    <p class="events-card__address">By Pottery Studio No. 1<br> Mar 20, 2019</p>
+                    <div class="events-card__block">
+                        <a href="#" class="bookmarks">Bookmark</a>
+                        <span class="price">2300 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/workshop.jpg" alt="workshop">
+                <div class="events-card__label">Online</div>
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Drawing</a>
+                    <a href="#" class="events-card__head">Workshop on drawing acrylic and textural paste</a>
+                    <p class="events-card__address">By Art & Me <br>Mar 22, 2019</p>
+                    <div class="events-card__block">
+                        <a href="#" class="bookmarks">Bookmark</a>
+                        <span class="price">1900 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/rings.jpg" alt="rings">
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Jewelry</a>
+                    <a href="#" class="events-card__head">Jewelry Workshop Wedding Rings</a>
+                    <p class="events-card__address">By Rings <br>Mar 23, 2019</p>
+                    <div class="events-card__block">
+                        <a href="#" class="bookmarks">Bookmark</a>
+                        <span class="price">3000 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/art.jpg" alt="art">
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Drawing</a>
+                    <a href="#" class="events-card__head">Master class in drawing Pop art from the studio Art & Me</a>
+                    <p class="events-card__address">By Art & Me <br>Mar 26, 2019</p>
+                    <div class="events-card__block">
+                        <a href="#" class="bookmarks">Bookmark</a>
+                        <span class="price">800 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/mother-class.jpg" alt="mother-class">
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Floristics</a>
+                    <a href="#" class="events-card__head">Mother-class on floristics Collect Bowl without rules..</a>
+                    <p class="events-card__address">By Art & Me <br>Mar 26, 2019</p>
+                    <div class="events-card__block">
+                        <a href="#" class="bookmarks">Bookmark</a>
+                        <span class="price">4200 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/illustration.jpg" alt="illustration">
+                <div class="events-card__label">FOR KIDS</div>
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Drawing</a>
+                    <a href="#" class="events-card__head">Master class on drawing Space Illustration</a>
+                    <p class="events-card__address">By Art & Me <br>Mar 26, 2019</p>
+                    <div class="events-card__block">
+                        <a href="#" class="bookmarks">Bookmark</a>
+                        <span class="price">600 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-big-card swiper-slide">
+                <img src="images/culinary.jpg" alt="culinary">
+                <div class="events-big-card__content">
+                    <a href="#" class="events-big-card__section">COOKING</a>
+                    <a href="#" class="events-big-card__head">Culinary master class "Bread for two times” by the
+                        Chef</a>
+                    <p class="events-big-card__description">Come on the last day of Shrovetide for Sunday brunch in the
+                        studio Cook Cook Coo. We will bake beautiful and delicious pancakes, make several variations of
+                        dough and lots of toppings!</p>
+                    <p class="events-big-card__address">By Chef on Mar 26, 2019</p>
+                    <div class="events-card__block">
+                        <span class="views">1200</span>
+                        <span class="price">4300 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-big-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/pottery.jpg" alt="pottery">
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">MANUAL BUSINESS</a>
+                    <a href="#" class="events-card__head">Pottery master class with painting</a>
+                    <p class="events-card__address">By Pottery Studio No. 1<br> Mar 20, 2019</p>
+                    <div class="events-card__block">
+                        <span class="views">876</span>
+                        <span class="price">2300 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/workshop.jpg" alt="workshop">
+                <div class="events-card__label">Online</div>
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Drawing</a>
+                    <a href="#" class="events-card__head">Workshop on drawing acrylic and textural paste</a>
+                    <p class="events-card__address">By Art & Me <br>Mar 22, 2019</p>
+                    <div class="events-card__block">
+                        <span class="views">200</span>
+                        <span class="price">1900 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.events-card -->
+            <div class="events-card swiper-slide">
+                <img src="images/rings.jpg" alt="rings">
+                <div class="events-card__content">
+                    <a href="#" class="events-card__section">Jewelry</a>
+                    <a href="#" class="events-card__head">Jewelry Workshop Wedding Rings</a>
+                    <p class="events-card__address">By Rings <br>Mar 23, 2019</p>
+                    <div class="events-card__block">
+                        <span class="views">788</span>
+                        <span class="price">3000 ₽</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.events-card -->
+            </div>
+        </div>
+        <div class="view">
+            <a href="#">View more events</a>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <div class="logo">
+                <a href="#">
+                    Master <span>Classes</span>
+                </a>
+            </div>
+            <!-- /.logo -->
+            <div class="footer__address">
+                <span>Address line 1</span>
+                <span>Russia</span>
+            </div>
+            <!-- /.footer__address -->
+            <a href="#" class="footer__phone">10909-898-898</a>
+            <span class="footer__copy">Copyright &copy; All rights reserved</span>
+        </div>
+        <!-- /.footer-block -->
+        <div class="footer-block">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-block -->
+        <div class="footer-block">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Partners / Collaboration</a></li>
+                    <li><a href="#">Placement on the site</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-block -->
+        <div class="footer-block">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#" class="facebook">Facebook</a></li>
+                    <li><a href="#" class="twitter">Twitter</a></li>
+                    <li><a href="#" class="youtube">Youtube</a></li>
+                    <li><a href="#" class="linkedin">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.footer-block -->
 
 
-
-	<!-- регистрация -->
-	<div class="popup popup__check">
-	    <div class="popup__dialog">
-	      <div class="popup__content">
-	         <div class="popup__content-wrapp">
-		     <button class="popup__close popup__check-close"></button>
-	      	  <!-- Заголовок окна --> 
-	      	     <div class="container">
-	      	     	<div class="left-block">
-		      	     	<h4 class="left-block__head">Unleash your <br>Creative potential</h4>
-			  	     </div>
-		      	     <!-- /.left-block -->
-		      	     <div class="popup-form">
-		      	     	<div class="popup-form__content">
-		      	     		<h4 class="popup-form__head">Sign up</h4>
-		      	     		<div class="popup-tabs">
-								<div class="popup-tabs__tab">
-									<span class="tab">User</span>
-									<span class="tab tab-active">Organizer</span>
-								</div>
-								<div class="popup-tabs__content">
-									<div class="tab-item">
-										 <form action="#">
-											<input type="text" placeholder="Name">
-											<input type="text" class="wrong" placeholder="Email">
-											<input type="password" placeholder="Password">
-											<div class="check">
-												<input type="checkbox" class="checkbox" id="scales" name="scales">
-												<label for="scales" class="label"></label>
-												<p>I agree to the processing of personal data and accept the terms of the user agreement</p>
-											</div>
-											<button class="popup-form__btn successful-btn">Create account</button>
-											<div class="popup-form__social">
-												<div class="head">
-													<h5>Or sign up with</h5>
-												</div>
-												<div class="block">
-													<a href="#" class="social-link">Facebook</a>
-													<a href="#" class="social-link">ok.ru</a>
-													<a href="#" class="social-link">vk.com</a>
-												</div>
-											</div>
-											<span class="have">Already have an account? <a href="#" class="login-btn">Sign in here</a></span>
-										</form>
-									</div>
-									<div class="tab-item tab-active">
-										<form action="#">
-											<input type="text" placeholder="Company name">
-											<input type="email" class="wrong" placeholder="Email">
-											<input type="password" placeholder="Password">
-											<div class="check">
-												<input type="checkbox" class="checkbox" id="scales1" name="scales1">
-												<label for="scales1" class="label"></label>
-												<p>I agree to the processing of personal data and accept the terms of the user agreement</p>
-											</div>
-											<button class="popup-form__btn">Create account</button>
-											<div class="consent">
-												<p>Please agree to the terms and conditions</p>
-											</div>
-											<div class="popup-form__social">
-												<div class="head">
-													<h5>Or sign up with</h5>
-												</div>
-												<div class="block">
-													<a href="#" class="social-link">Facebook</a>
-													<a href="#" class="social-link">ok.ru</a>
-													<a href="#" class="social-link">vk.com</a>
-												</div>
-											</div>
-											<span class="have">Already have an account? <a href="#" class="login-btn">Sign in here</a></span>
-										</form>
-									</div>
-								</div>
-							</div>
-		      	     	</div>
-		      	     </div>
-		      	     <!-- /.popup-form -->
-	      	     </div>
-		  	  </div>
-		  </div>
-		</div>
-	</div>
-
-	<!-- успешная регистрация -->
-	<div class="popup popup__successful">
-	    <div class="popup__dialog">
-	      <div class="popup__content">
-	         <div class="popup__content-wrapp">
-		     <button class="popup__close popup__successful-close"></button>
-	      	  <!-- Заголовок окна --> 
-	      	     <div class="container">
-	      	     	<div class="successful__img"></div>
-	      	     	<h3 class="successful__head">Registration Successful</h3>
-	      	     	<p class="successful__description">Your sign up is now completed. Now start exploring the the events you might be interested in.</p>
-	      	     	<button class="successful__btn">Get started</button>
-	      	     </div>
-		  	  </div>
-		  </div>
-		</div>
-	</div>
-	<!-- вход -->
-	<div class="popup popup__login">
-	    <div class="popup__dialog">
-	      <div class="popup__content">
-	         <div class="popup__content-wrapp">
-		     <button class="popup__close popup__login-close"></button>
-	      	  <!-- Заголовок окна --> 
-	      	     <div class="container">
-	      	     	<div class="left-block">
-		      	     	<h4 class="left-block__head">Unleash your <br>Creative potential</h4>
-			  	     </div>
-		      	     <!-- /.left-block -->
-		      	     <div class="popup-form">
-		      	     	<div class="popup-form__content">
-		      	     		<h4 class="popup-form__head">Login</h4>
-		      	     		<form action="#">
-								<input type="text" placeholder="Name">
-								<input type="password" placeholder="Password">
-								<div class="forgot">
-									<a href="#" class="forgot-btn">Forgot password?</a>
-								</div>
-								<button class="popup-form__btn">Log in</button>
-								<div class="popup-form__social">
-									<div class="head">
-										<h5>Or log in with</h5>
-									</div>
-									<div class="block">
-										<a href="#" class="social-link">Facebook</a>
-										<a href="#" class="social-link">ok.ru</a>
-										<a href="#" class="social-link">vk.com</a>
-									</div>
-								</div>
-								<span class="have">Don’t have an account? <a href="#" class="sign-up">Sign up here</a></span>
-							</form>
-		      	     	</div>
-		      	     </div>
-		      	     <!-- /.popup-form -->
-	      	     </div>
-		  	  </div>
-		  </div>
-		</div>
-	</div>
-	<!-- востановить пароль -->
-	<div class="popup popup__forgot">
-	    <div class="popup__dialog">
-	      <div class="popup__content">
-	         <div class="popup__content-wrapp">
-		     <button class="popup__close popup__forgot-close"></button>
-	      	  <!-- Заголовок окна --> 
-	      	     <div class="container">
-	      	     	<div class="left-block">
-		      	     	<h4 class="left-block__head">Unleash your <br>Creative potential</h4>
-			  	     </div>
-		      	     <!-- /.left-block -->
-		      	     <div class="popup-form">
-		      	     	<div class="popup-form__content">
-		      	     		<h4 class="popup-form__head">Forgot password?</h4>
-		      	     		<form action="#">
-								<input type="text" placeholder="Email">
-								<div class="links">
-									<p>Enter your Email, and we’ll send you the reset link</p>
-								</div>
-								<button class="popup-form__btn">Send reset link</button>
-								<span class="have">Back to <a href="#" class="sign-in">Sign in</a></span>
-							</form>
-		      	     	</div>
-		      	     </div>
-		      	     <!-- /.popup-form -->
-	      	     </div>
-		  	  </div>
-		  </div>
-		</div>
-	</div>
+        <div class="footer-signup">
+            <p class="footer-signup__description">Sign up and start learning today.</p>
+            <button class="footer-signup__btn">Get Started</button>
+        </div>
+    </div>
+    <!-- /.container -->
+</footer>
 
 
+<!-- регистрация -->
+<div class="popup popup__check">
+    <div class="popup__dialog">
+        <div class="popup__content">
+            <div class="popup__content-wrapp">
+                <button class="popup__close popup__check-close"></button>
+                <!-- Заголовок окна -->
+                <div class="container">
+                    <div class="left-block">
+                        <h4 class="left-block__head">Unleash your <br>Creative potential</h4>
+                    </div>
+                    <!-- /.left-block -->
+                    <div class="popup-form">
+                        <div class="popup-form__content">
+                            <h4 class="popup-form__head">Sign up</h4>
+                            <div class="popup-tabs">
+                                <div class="popup-tabs__tab">
+                                    <span class="tab">User</span>
+                                    <span class="tab tab-active">Organizer</span>
+                                </div>
+                                <div class="popup-tabs__content">
+                                    <div class="tab-item">
+                                        <form action="#">
+                                            <input type="text" placeholder="Name">
+                                            <input type="text" class="wrong" placeholder="Email">
+                                            <input type="password" placeholder="Password">
+                                            <div class="check">
+                                                <input type="checkbox" class="checkbox" id="scales" name="scales">
+                                                <label for="scales" class="label"></label>
+                                                <p>I agree to the processing of personal data and accept the terms of
+                                                    the user agreement</p>
+                                            </div>
+                                            <button class="popup-form__btn successful-btn">Create account</button>
+                                            <div class="popup-form__social">
+                                                <div class="head">
+                                                    <h5>Or sign up with</h5>
+                                                </div>
+                                                <div class="block">
+                                                    <a href="#" class="social-link">Facebook</a>
+                                                    <a href="#" class="social-link">ok.ru</a>
+                                                    <a href="#" class="social-link">vk.com</a>
+                                                </div>
+                                            </div>
+                                            <span class="have">Already have an account? <a href="#" class="login-btn">Sign in here</a></span>
+                                        </form>
+                                    </div>
+                                    <div class="tab-item tab-active">
+                                        <form action="#">
+                                            <input type="text" placeholder="Company name">
+                                            <input type="email" class="wrong" placeholder="Email">
+                                            <input type="password" placeholder="Password">
+                                            <div class="check">
+                                                <input type="checkbox" class="checkbox" id="scales1" name="scales1">
+                                                <label for="scales1" class="label"></label>
+                                                <p>I agree to the processing of personal data and accept the terms of
+                                                    the user agreement</p>
+                                            </div>
+                                            <button class="popup-form__btn">Create account</button>
+                                            <div class="consent">
+                                                <p>Please agree to the terms and conditions</p>
+                                            </div>
+                                            <div class="popup-form__social">
+                                                <div class="head">
+                                                    <h5>Or sign up with</h5>
+                                                </div>
+                                                <div class="block">
+                                                    <a href="#" class="social-link">Facebook</a>
+                                                    <a href="#" class="social-link">ok.ru</a>
+                                                    <a href="#" class="social-link">vk.com</a>
+                                                </div>
+                                            </div>
+                                            <span class="have">Already have an account? <a href="#" class="login-btn">Sign in here</a></span>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.popup-form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>	
+<!-- успешная регистрация -->
+<div class="popup popup__successful">
+    <div class="popup__dialog">
+        <div class="popup__content">
+            <div class="popup__content-wrapp">
+                <button class="popup__close popup__successful-close"></button>
+                <!-- Заголовок окна -->
+                <div class="container">
+                    <div class="successful__img"></div>
+                    <h3 class="successful__head">Registration Successful</h3>
+                    <p class="successful__description">Your sign up is now completed. Now start exploring the the events
+                        you might be interested in.</p>
+                    <button class="successful__btn">Get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- вход -->
+<div class="popup popup__login">
+    <div class="popup__dialog">
+        <div class="popup__content">
+            <div class="popup__content-wrapp">
+                <button class="popup__close popup__login-close"></button>
+                <!-- Заголовок окна -->
+                <div class="container">
+                    <div class="left-block">
+                        <h4 class="left-block__head">Unleash your <br>Creative potential</h4>
+                    </div>
+                    <!-- /.left-block -->
+                    <div class="popup-form">
+                        <div class="popup-form__content">
+                            <h4 class="popup-form__head">Login</h4>
+                            <form action="#">
+                                <input type="text" placeholder="Name">
+                                <input type="password" placeholder="Password">
+                                <div class="forgot">
+                                    <a href="#" class="forgot-btn">Forgot password?</a>
+                                </div>
+                                <button class="popup-form__btn">Log in</button>
+                                <div class="popup-form__social">
+                                    <div class="head">
+                                        <h5>Or log in with</h5>
+                                    </div>
+                                    <div class="block">
+                                        <a href="#" class="social-link">Facebook</a>
+                                        <a href="#" class="social-link">ok.ru</a>
+                                        <a href="#" class="social-link">vk.com</a>
+                                    </div>
+                                </div>
+                                <span class="have">Don’t have an account? <a href="#"
+                                                                             class="sign-up">Sign up here</a></span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.popup-form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- востановить пароль -->
+<div class="popup popup__forgot">
+    <div class="popup__dialog">
+        <div class="popup__content">
+            <div class="popup__content-wrapp">
+                <button class="popup__close popup__forgot-close"></button>
+                <!-- Заголовок окна -->
+                <div class="container">
+                    <div class="left-block">
+                        <h4 class="left-block__head">Unleash your <br>Creative potential</h4>
+                    </div>
+                    <!-- /.left-block -->
+                    <div class="popup-form">
+                        <div class="popup-form__content">
+                            <h4 class="popup-form__head">Forgot password?</h4>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <div class="links">
+                                    <p>Enter your Email, and we’ll send you the reset link</p>
+                                </div>
+                                <button class="popup-form__btn">Send reset link</button>
+                                <span class="have">Back to <a href="#" class="sign-in">Sign in</a></span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.popup-form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  </body>
+
+<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>
