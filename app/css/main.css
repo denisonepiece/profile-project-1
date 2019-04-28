@@ -168,7 +168,7 @@ header {
   position: absolute;
   width: 100%;
   height: 99%;
-  background-color: #2d3bf0bd;
+  background-color: rgba(45, 59, 240, 0.7);
   z-index: 20;
   top: -105%;
   -webkit-transition: top 0.5s ease;
