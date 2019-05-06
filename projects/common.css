@@ -1,0 +1,22 @@
+.next-page {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(41, 55, 240, 0.3);
+    height: 100%;
+    width: 40px;
+    z-index: 1001;
+}
+
+.next-page img {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+}
+
+.next-page:hover {
+    background-color: rgba(41, 55, 240, 0.6);
+}
+
+
