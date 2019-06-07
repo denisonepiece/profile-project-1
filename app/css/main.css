@@ -248,6 +248,7 @@ header {
       background-image: url("../img/link.svg");
       -webkit-background-size: contain;
               background-size: contain;
+      background-repeat: no-repeat;
       margin-left: 10px; }
   .project-alone__sub h4 {
     font-size: 1.8em;

@@ -183,7 +183,6 @@ header {
 .project-alone__top {
   position: relative;
   margin-bottom: 20px;
-
 }
 
 #links-show {
@@ -274,6 +273,7 @@ header {
       width: 26px;
       background-image: url('../img/link.svg');
       background-size: contain;
+      background-repeat: no-repeat;
       margin-left: 10px;
     }
   }
