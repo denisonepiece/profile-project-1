@@ -1,11 +1,13 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
+var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
     return gulp.src("app/scss/*.scss")
-        .pipe(sass())
+        .pipe(sass({
+            includePaths: require('node-normalize-scss').includePaths
+        }))
         .pipe(autoprefixer({
             browsers: ['last 15 versions'],
             cascade: true
@@ -14,27 +16,27 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('serve', gulp.series('sass', function() {
+gulp.task('serve', gulp.series('sass', function () {
 
     browserSync.init({
         server: ""
     });
 
     gulp.watch("app/scss/*.scss", gulp.series('sass'));
+    gulp.watch("app/js/*.js").on('change' , browserSync.reload);
     gulp.watch("*.html").on('change', browserSync.reload);
 }));
 
 gulp.task('autoprefixer', () =>
     gulp.src('app/css/main.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('css'))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(gulp.dest('css'))
 );
 
-
-gulp.task('build', function(){
+gulp.task('build', function () {
     var buildHtml = gulp.src('app/*.html')
         .pipe(gulp.dest('dist'))
     var buildJs = gulp.src('app/js/**/*.js')
@@ -46,7 +48,5 @@ gulp.task('build', function(){
     var dropImages = gulp.src('app/img/**/*')
         .pipe(gulp.dest('dist/img'))
 });
-
-
 
 gulp.task('default', gulp.series('serve'));
