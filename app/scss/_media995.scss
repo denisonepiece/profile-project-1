@@ -1,10 +1,11 @@
 @media screen and (max-width: 995px) {
   .preview {
     justify-content: center;
+    flex-direction: column;
   }
 
   .title {
-    margin-top: 30%;
+    // margin-top: 30%;
   }
 
   .pizza {

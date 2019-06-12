@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-  animationHeaderLogo();
+  // animationHeaderLogo();
   animationNickName();
 
   function animationHeaderLogo() {
@@ -30,8 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       if (top == 0) {
         up = true;
-        pizza.style.transform = 'rotate(' + rotate + 'deg) translateX(60px)';
-        // pieces[0].style.height = height + 'px';
+        pieces[0].style.position = 'unset';
       }
 
       if (rotate == -264) {

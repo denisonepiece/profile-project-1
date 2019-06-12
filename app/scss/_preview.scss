@@ -1,25 +1,25 @@
 .preview {
   height: 100vh;
-  // padding: 7rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 70px;
+  box-sizing: border-box;
 }
 
 .title__nickname {
   font-size: 6rem;
   position: relative;
   overflow: hidden;
-
 }
 
 .nick-left {
-  margin-right: 180px;
+  margin-right: 142px;
 }
 
 .nick-numbers {
-  left: 160px;
+  left: 140px;
   top: 0;
   height: 6rem;
   text-align: center;
@@ -32,6 +32,9 @@
   position: relative;
   height: 400px;
   width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     height: 200px;
