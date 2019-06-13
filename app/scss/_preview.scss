@@ -1,11 +1,25 @@
 .preview {
+  top: 0;
   height: 100vh;
+  width: 100%;
+  position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 70px;
-  box-sizing: border-box;
+  z-index: 1000;
+  background-color: #fff;
+
+  display: none;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.title {
+  margin-right: 50px;
 }
 
 .title__nickname {
@@ -30,67 +44,59 @@
 
 .pizza {
   position: relative;
+  overflow: hidden;
+
   height: 400px;
-  width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 384px;
 
   img {
-    height: 200px;
+    height: 180px;
     position: absolute;
+    // transition: 0.5s;
+    opacity: 1;
+
+  }
+
+  .hidden {
+    display: none;
   }
 
   .one {
-    opacity: 1;
-    transition: 0.5s;
-    left: 1px;
-    top: -webkit-calc(50% - 100px);
+    transform: rotate(-90deg);
+    left: 0px;
     top: 118px;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-98deg);
   }
 
   .two {
-    opacity: 1;
-    transition: 0.5s;
-    left: 42px;
-    top: 16px;
-    transform: rotate(-37deg);
+    transform: rotate(-30deg);
+    left: 54px;
+    top: 31px;
   }
 
   .three {
-    opacity: 1;
-    transition: 0.5s;
-    left: calc(50% - 59px);
-    top: -1px;
-    transform: rotate(17deg);
+    transform: rotate(29deg);
+    left: 152px;
+    top: 31px;
   }
 
   .four {
-    opacity: 1;
-    transition: 0.5s;
-    transform: rotate(70deg);
-    right: -13px;
-    top: 67px;
+    transform: rotate(89deg);
+    left: 204px;
+    top: 116px;
   }
 
   .five {
-    opacity: 1;
-    transition: 0.5s;
-    transform: rotate(123deg);
-    right: -2px;
-    top: 165px;
+    transform: rotate(144deg);
+    left: 164px;
+    top: 199px;
   }
 
   .six {
-    opacity: 1;
-    transition: 0.5s;
-    transform: rotate(176deg);
-    right: 83px;
+    transform: rotate(198deg);
+    left: 72px;
     top: 214px;
   }
 
-  
+
+
 }

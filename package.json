@@ -16,9 +16,10 @@
     "url": "https://github.com/denisonepiece/profile-project-2/issues"
   },
   "homepage": "https://github.com/denisonepiece/profile-project-2#readme",
-  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^4.0.2",

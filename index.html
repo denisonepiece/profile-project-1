@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="app/css/normalize.css">
 	<link rel="stylesheet" href="app/css/main.css">
 	<link href="" rel="shortcut icon" />
 	<title>denisonepiece</title>
@@ -15,11 +14,11 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__left">
+				<div class="nickname">denisonepiece</div>
 				<div class="header__logo">
-					<img src="app/img/logo.svg" alt="">
+					<img src="app/img/pizza.svg" alt="">
 					<div></div>
 				</div>
-				<div class="nickname">denisonepiece</div>
 			</div>
 			<nav class="navbar">
 				<ul class="navbar__list">
@@ -33,29 +32,16 @@
 	</header>
 	<main class="main">
 		<div class="container">
-			<section class="preview">
-				<div class="title">
-					<h1 class="title__nickname">
-						<span class="nick-left">denis</span>
-						<span class="nick-numbers"> one two three four five six </span>
-						<span class="nick-right">piece.</span>
-					</h1>
-				</div>
-				<div class="pizza">
-					<img class="one" src="app/img/pizza.svg" alt="">
-					<img class="two" src="app/img/pizza.svg" alt="">
-					<img class="three" src="app/img/pizza.svg" alt="">
-					<img class="four" src="app/img/pizza.svg" alt="">
-					<img class="five" src="app/img/pizza.svg" alt="">
-					<img class="six" src="app/img/pizza.svg" alt="">
-				</div>
-			</section>
 			<section class="about">
 				<h1>About</h1>
+				<h2>About</h2>
+				<h3>About</h3>
+				<h4>About</h4>
+
 				<p>Сразу, как как начал заниматься веб-разработкой, устроился в диджитал агенство, сделав несколько
 					проектов по части back-end'а, решил остановиться на <em>front-end'e</em> и сейчас сфокусирован
-					только на нем. <br>
-					Присутствовал на всех этапах развития проекта, от первой встречи с клиентом до его сдачи.<br>
+					только на нем. <br> Присутствовал на всех этапах
+					развития проекта, от первой встречи с клиентом до его сдачи.<br>
 					<br>
 					<b>Что знаю:</b></p>
 				<ul>
@@ -72,15 +58,142 @@
 	</main>
 	<footer>
 		<h1>footer</h1>
-		
+
 	</footer>
-	<!-- WRAPPER END -->
 
-	<!-- Scripts start -->
 
-	<script src="./app/js/main.js"></script>
+	<div class="preview">
+		<div class="container">
+			<div class="title">
+				<h1 class="title__nickname">
+					<span class="nick-left">denis</span>
+					<span class="nick-numbers"> one two three four five six </span>
+					<span class="nick-right">piece</span>
+				</h1>
+			</div>
+			<div class="pizza">
+				<img class="one" src="app/img/pizza.svg">
+				<img class="two" src="app/img/pizza.svg">
+				<img class="three" src="app/img/pizza.svg">
+				<img class="four" src="app/img/pizza.svg">
+				<img class="five" src="app/img/pizza.svg">
+				<img class="six" src="app/img/pizza.svg">
+			</div>
+		</div>
+	</div>
 
-	<!-- Scripts end -->
+	<div class="stab">
+		<div class="container">
+			<h1>Решил обновить сайт(это просто заглушка)</h1>
+			<p>Ниже ссылки на сделанные работы. Внутри каждой из них - справа есть стрелочка для просмотра всех страниц
+				данного проекта.</p>
+			<ol class="projects__list">
+				<li class="projects__item">
+					<a href="./projects/dacha/404.html">Дачный сезон</a>
+
+					<p>Работа с чужим кодом, создание новых страниц,
+						разработка новых компонентов, доработка имеющихся.
+						Всё делал в стиле предыдущих разработчиков,
+						использую ими созданную "архитектуру". Создание независимых блоков
+						и переиспользование старых. Сайт адаптивен только до 1020, всего
+						сделано <b>10 страниц</b>, каждая из них чем-то отличается в каждой были свои
+						трудности. Обязательно загляните в этот проект!
+					</p>
+					<ul class="technology">
+						<li>html</li>
+						<li>css</li>
+						<li>swiper</li>
+						<li>js</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<a href="./projects/veronika/blog.html">Личный блок Вероники Агафоновой</a>
+
+					<p>Самая обычная верстка - адаптивная, под каждую страницу было
+						предоставленно по 5 макетов с разными разрешениями
+						экранов. Это был первый многостраничный сайт сделанный с нуля(<b>5 страниц</b>).
+					</p>
+					<ul class="technology">
+						<li>html</li>
+						<li>scss</li>
+						<li>gulp</li>
+						<li>jquery</li>
+						<li>flexbox</li>
+						<li>adaptive</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<a href="./projects/tajam/index.html">Tajam</a>
+
+					<p>Тествое задание для приема на "работу"(парни с украины,
+						которые дают мне проектики),
+						мой самый первый для кого-то сверстанный сайт.
+						Полностью адаптивен, адаптивные swiper слайдеры,
+						делал его на свое усмотрение. Всё аккуратненько!</p>
+					<ul class="technology">
+						<li>html</li>
+						<li>scss</li>
+						<li>gulp</li>
+						<li>swiper</li>
+						<li>jquery</li>
+						<li>flexbox</li>
+						<li>adaptive</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<a href="./projects/sea-battle/index.html">Sea-battle</a>
+					<p>После того как прошел курс по JS'у, прилетело приглашение
+						на работу(Программист JS), дали тестовое задание,
+						его я конечно завалил, в принципе выполнил все условия и
+						игрушка получилось рабочая. За 3 дня, читая документацию по
+						React'у и параллельно делая. Я понимал, что ничего не продумал,
+						что были неокрепшие знания в js'e, но всё таки до последнего пытался
+						сделать, что в итоге и получилось, но этот код лучше не видеть, я был
+						как слепой котенок, но это было прорывом к любви и понимаю JS'а,
+						важности ОПП, проектирования и к старанию писать чистый код, используя
+						актуальную методологию программирования.
+					</p>
+					<ul class="technology">
+						<li>react</li>
+						<li>jsx</li>
+						<li>js</li>
+						<li>css</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<a href="./projects/lian/index.html">Lian</a>
+					<p>Самый первая верстка сайта, находил макет в интернете,
+						делал чисто для портфолио</p>
+					<ul class="technology">
+						<li>css</li>
+						<li>html</li>
+						<li>js</li>
+					</ul>
+				</li>
+				<li class="projects__item">
+					<a href="http://hld.agency">HLD</a>
+					<p>Начинал свой путь с backend'а, ставил верстку на PHP Framework Yii2, 
+						базы данных, админка, все дела.</p>
+					<ul class="technology">
+						<li>PHP</li>
+						<li>AJAX</li>
+						<li>Yii2</li>
+						<li>MySQL</li>
+						<li>OpenServer</li>
+						<li>FTP</li>
+						<li>Hosting</li>
+					</ul>
+				</li>
+			</ol>
+			</>
+		</div>
+		<!-- WRAPPER END -->
+
+		<!-- Scripts start -->
+
+		<script src="./app/js/main.js"></script>
+
+		<!-- Scripts end -->
 </body>
 
 </html>

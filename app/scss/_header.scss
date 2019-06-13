@@ -18,10 +18,7 @@
 
 .nickname {
   font-size: 2rem;
-
-  &::after {
-    content: '.';
-  }
+  margin-right: 10px;
 }
 
 .header__left {
@@ -31,15 +28,13 @@
 
   &:hover {
     .header__logo {
-      transform: translateY(2px) rotate(360deg);
-      padding: 0;
-      transition:padding 0.3s , transform 1s;
+      transform: rotate(360deg);
+      transition: transform 1s;
     }
   }
 }
 
 .header__logo {
-  padding-left: 25px;
   box-sizing: border-box;
   left: calc(50% - 28px);
   height: 56px;
@@ -47,10 +42,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transform: translateY(2px) rotate(0deg);
+  transform: rotate(0deg);
   transition: 0.3s;
 
   img {
+    transform: rotate(-90deg);
     height: 50%;
   }
 }
@@ -68,8 +64,6 @@
     padding: 10px 15px;
 
     &:before {
-      // position: absolute;
-      // left: 10px;
       content: '.';
       opacity: 1;
       transition: 0.4s;
