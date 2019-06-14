@@ -647,6 +647,27 @@ li {
 .about {
   text-align: center; }
 
+body {
+  background-color: #ffffff; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+main {
+  padding-top: 7rem;
+  background-color: #ffffff; }
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
 .stab {
   position: absolute;
   height: 100vh;
@@ -675,28 +696,23 @@ li {
       padding: 4px 15px;
       background: black;
       color: white;
-      margin-right: 10px; }
+      margin-right: 10px;
+      margin-bottom: 5px; }
 
-body {
-  background-color: #ffffff; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
+.header {
+  display: none; }
 
 main {
-  padding-top: 7rem;
-  background-color: #ffffff; }
+  display: none; }
 
-.container {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 2rem; }
+.footer {
+  display: none; }
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 1rem; }
+  ol {
+    padding-left: 2rem; } }
 
 @media screen and (max-width: 995px) {
   .preview {

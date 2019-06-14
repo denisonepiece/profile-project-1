@@ -27,7 +27,30 @@
       background: black;
       color: white;
       margin-right: 10px;
+      margin-bottom: 5px;
     }
   }
 
+}
+
+.header {
+  display: none;
+}
+
+main {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  ol {
+    padding-left: 2rem;
+  }
 }
