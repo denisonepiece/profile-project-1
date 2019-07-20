@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proxy</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img" src="img/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item menu__item-active"><a href="#">VPN</a></li>
+          <li class="menu__item"><a href="#">PROXY</a></li>
+          <li class="menu__item"><a href="#">Инструменты</a></li>
+          <li class="menu__item"><a href="#">FAQ</a></li>
+          <li class="menu__item"><a href="#">Поддержка</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <span class="burger__center">
+        </span>
+      </div>
+    </div>
+  </header>
+  <main class="main proxy">
+    <h1 class="main__title main__title_with-sub">Изменение IP-Адреса</h1>
+    <p class="main__sub-title">Узнав ваш реальный IP-адрес, злоумышленники узнают о вас очень много информации</p>
+    <section class="ip-info">
+      <div class="container">
+        <div class="left">
+          <h2 class="h2-green">Ваш IP-адрес:<br><span id="ip-number">75.22.17.17</span></h2>
+          <button class="btn btn-blue">Изменить IP-адрес</button>
+        </div>
+        <div class="ip-info__list">
+          <div class="ip-info__item">
+            <div class="ip-info__type"><span>Местоположение</span></div><img src="img/rus.png" alt="" class="ip-info__icon"><span ip-info__info>Russian Federation (RU), Moscow</span>
+          </div>
+          <div class="ip-info__item">
+            <div class="ip-info__type"><span>Провайдер</span></div><img src="img/provider.png" alt="" class="ip-info__icon"><span ip-info__info>Unitel</span>
+          </div>
+          <div class="ip-info__item">
+            <div class="ip-info__type"><span>Хост</span></div><img src="img/host.png" alt="" class="ip-info__icon"><span ip-info__info>775-75-17-97.ddd.uniteldsl.ru</span>
+          </div>
+          <div class="ip-info__item">
+            <div class="ip-info__type"><span>ОС</span></div><img src="img/os.png" alt="" class="ip-info__icon"><span ip-info__info>Win7</span>
+          </div>
+          <div class="ip-info__item">
+            <div class="ip-info__type"><span>Бразуер</span></div><img src="img/browser.png" alt="" class="ip-info__icon"><span ip-info__info>Chrome 73.0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map-border" style="overflow:hidden; position: relative;">
+          <iframe width="100%" height="387" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36009.871349586625!2d37.60830575001948!3d55.66087091100325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1561439827556!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+            <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href=""></a> & <a href="https://iamsterdamcard.it">iamsterdamcard.it</a></small></div>
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important
+            }
+
+          </style>
+        </div><br />
+      </div>
+    </section>
+
+    <section class="detailed">
+      <div class="container">
+        <h1>Подробные сведения, предоставленные вашим браузером</h1>
+        <ul class="detailed__list">
+          <li class="detailed__item"><span>X-Forward-For</span>95.55.13.95</li>
+          <li class="detailed__item"><span>X-Forward-For</span>95.55.13.95</li>
+          <li class="detailed__item"><span>X-Forward-For</span>95.55.13.95</li>
+          <li class="detailed__item"><span>X-Forward-For</span>95.55.13.95</li>
+          <li class="detailed__item"><span>X-Forward-For</span>95.55.13.95</li>
+          <li class="detailed__item"><span>X-Forward-For</span>95.55.13.95</li>
+        </ul>
+      </div>
+    </section>
+    <section class="security">
+      <div class="container">
+        <h1 class="security__title">Невидимым бать так просто!</h1>
+        <p class="security__sub">Воспользовавшись услугой VPN, вы обезопасите себя от действий злоумыш&shy;ленников, откроете мир безопасного и свободного интернета, возьмите ин&shy;тернет с собой, куда бы вы не отправились</p>
+        <div class="security__bottom">
+          <p>Хотите скрыть информацию<br>
+            о своем IP-адресе?</p>
+          <a href="#" class="btn btn-green">Подробнее</a>
+          <img src="img/change-ip.png.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h1 class="h1-black">Отвечаем на самые популярные вопросы наших клиентов</h1>
+        <span class="line"></span>
+        <div class="questions">
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__row-with-img">
+            <div class="left">
+              <div class="questions__item">
+                <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+                <p>
+                  В таких случае вам следует связаться с нами,
+                  через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+                  которую была оформлена покупка.
+                </p>
+              </div>
+              <div class="questions__item">
+                <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+                <p>
+                  В таких случае вам следует связаться с нами,
+                  через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+                  которую была оформлена покупка.
+                </p>
+              </div>
+              <h3>Остались вопросы? <a href="#" class="link-blue">Напишите нам</a></h3>
+            </div>
+            <img src="img/proxy/faq.png" alt="">
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <span class="copyright">© 2019. ALTVPN. Все права защищены</span>
+        <p>Администрация — <a class='link' href='#'>info@altvpn.ru</a></p>
+        <p>Партнерская программа — <a class='link' href='#'>partners@altvpn.ru</a></p>
+      </div>
+
+      <div class="footer__block">
+        <h3 class="footer__title">Языки</h3>
+        <ul>
+          <li><a href="#">Русский</a></li>
+          <li><a href="#">Английский</a></li>
+          <li><a href="#">Украинский</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Социальные сети</h3>
+        <div class="social-list">
+          <a href="#" class="social-list__item"><img src="img/icon-facebook.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-twitter.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-vk.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-telegram.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-google.svg"></a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">О нас</h3>
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Услуги</h3>
+        <ul>
+          <li><a href="#">VPN</a></li>
+          <li><a href="#">Proxy</a></li>
+          <li><a href="#">Цены</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Инструменты</h3>
+        <ul>
+          <li><a href="#">Аномайзер</a></li>
+          <li><a href="#">Прокси-чекер</a></li>
+          <li><a href="#">Тест скорости</a></li>
+          <li><a href="#">Еще...</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

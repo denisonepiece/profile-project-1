@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px){
+	.another-cases__list {
+		display: flex;
+		flex-direction: column;
+		li {
+			margin-bottom: 20px;
+			width: 100%;
+		}
+	}
+
+	.another-cases {
+		margin-bottom: 1rem;
+	}
+
+	.portfolio {
+		margin-top: 4rem;
+
+		h1 {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+

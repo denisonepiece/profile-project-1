@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>server-load</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="server-load-body">
+  <header class="header">
+    <div class="container">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img" src="img/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item"><a href="#">VPN</a></li>
+          <li class="menu__item"><a href="#">PROXY</a></li>
+          <li class="menu__item menu__item-active menu__item-clicked">
+              <a href="#">Инструменты<span class="lang-menu-arrow"></span></a>
+            <div class="lang-menu-dropdown">
+              <div class="lang-menu-item"><a href="/ru/">Прокси-лист</a></div>
+              <div class="lang-menu-item"><a href="/en/">Прокси-чекер</a></div>
+              <div class="lang-menu-item"><a href="/de/">Статус серверов</a></div>
+              <div class="lang-menu-item"><a href="/ua/">Счастливый IP</a></div>
+              <div class="lang-menu-item"><a href="/es/">Тест скорости</a></div>
+            </div>
+          </li>
+          <li class="menu__item"><a href="#">FAQ</a></li>
+          <li class="menu__item"><a href="#">Поддержка</a></li>
+        </ul>
+      </nav>
+      <div class="lang-menu">
+        <div class="lang-menu-value">
+          <div class="lang-menu-value-image" style="background-image: url(img/rus-flag.png)"></div>
+          <span class="lang-menu-arrow"></span>
+        </div>
+        <div class="lang-menu-dropdown">
+          <div class="lang-menu-item"><a href="/ru/">Русский</a></div>
+          <div class="lang-menu-item"><a href="/en/">English</a></div>
+          <div class="lang-menu-item"><a href="/de/">Deutsch</a></div>
+          <div class="lang-menu-item"><a href="/ua/">Український</a></div>
+          <div class="lang-menu-item"><a href="/es/">Español</a></div>
+        </div>
+      </div>
+      <div class="burger">
+        <span class="burger__center">
+        </span>
+      </div>
+    </div>
+  </header>
+  <main class="main server-load">
+    <section class="join">
+      <div class="container">
+        <h1 class="join__header">Загруженность серверов</h1>
+        <div class="join__body">
+          <div class="join__left">
+            <p class="text-v1">Мы тщательно подобрали серверы,
+              которые соответствуют нашим высоким стандартам безопасности и
+              приватности. Доступ к ним контролируется, и мы единственные,
+              кто ими управляет, – больше никого. Они не хранят постоянной
+              информации об IP-адресах, как и не сохраняют логов. Каждый сервер
+              поддерживает все популярные протоколы, включая PPTP, L2TP, IPsec
+              (IKEv1 и IKEv2), OpenVPN, SoftEther и SSTP.</p>
+
+            <p>Мы предлагаем вам лучшие серверные зоны и низкий пинг (время отклика),
+              – возьмите интернет с собой, куда бы вы не отправились.</p>
+
+          </div>
+          <div class="join__right">
+            <img src="img/serverload/server-1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="servers">
+      <div class="container">
+        <div class="top">
+          <div class="left">
+            <div class="custom-select">
+              <select name="" id="">
+                <option value="0">СНГ</option>
+                <option value="1">Россия</option>
+                <option value="2">Германия</option>
+                <option value="3">США</option>
+              </select>
+            </div>
+          </div>
+          <div class="right">
+            <label class="radio"><b>Все серверы</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+            <label class="radio"><b>Серверы online</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+            <label class="radio"><b>Серверы offline</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+        </div>
+        <div class="servers-table">
+          <div class="servers-table__row offline">
+            <div class="servers-table__cell-country">
+              <h2 class="h2-green"><img src="img/canada.png" alt="">Монреаль<br><span>Канада</span></h2>
+            </div>
+            <div class="servers-table__cell-p2p">
+              <img src="img/serverload/p2p.png" alt="">
+              <div class="help-message">Текст текст текст текст</div>
+            </div>
+            <div class="servers-table__cell-sub">
+              <p>Отличный выбор, чтобы избежать надзора правительства США.</p>
+            </div>
+            <div class="servers-table__cell-status">
+              <img src="img/serverload/status.png" alt="">
+            </div>
+            <div class="servers-table__cell-space">
+              <div class="space-progress">
+                <span class="space-progress__indicator"></span>
+              </div>
+              <p> <span>57%</span> (250 Гб из 550 Гб)</p>
+            </div>
+          </div>
+          <div class="servers-table__row">
+            <div class="servers-table__cell-country">
+              <h2 class="h2-green"><img src="img/eng.png" alt="">Монреаль<br><span>Канада</span></h2>
+            </div>
+            <div class="servers-table__cell-p2p">
+              <img src="img/serverload/p2p.png" alt="">
+              <div class="help-message">Текст текст текст текст</div>
+
+            </div>
+            <div class="servers-table__cell-sub">
+              <p>Отличный выбор, чтобы избежать надзора правительства США.</p>
+            </div>
+            <div class="servers-table__cell-status">
+              <img src="img/serverload/status.png" alt="">
+            </div>
+            <div class="servers-table__cell-space">
+              <div class="space-progress">
+                <span class="space-progress__indicator"></span>
+              </div>
+              <p> <span>57%</span> (250 Гб из 550 Гб)</p>
+            </div>
+          </div>
+          <div class="servers-table__row offline">
+            <div class="servers-table__cell-country">
+              <h2 class="h2-green"><img src="img/canada.png" alt="">Монреаль<br><span>Канада</span></h2>
+            </div>
+            <div class="servers-table__cell-p2p">
+              <img src="img/serverload/p2p.png" alt="">
+              <div class="help-message">Текст текст текст текст Текст текст текст текст Текст текст текст текст Текст текст текст текст</div>
+
+            </div>
+            <div class="servers-table__cell-sub">
+              <p>Отличный выбор, чтобы избежать надзора правительства США.</p>
+            </div>
+            <div class="servers-table__cell-status">
+              <img src="img/serverload/status.png" alt="">
+            </div>
+            <div class="servers-table__cell-space">
+              <div class="space-progress">
+                <span class="space-progress__indicator"></span>
+              </div>
+              <p> <span>57%</span> (250 Гб из 550 Гб)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <span class="copyright">© 2019. ALTVPN. Все права защищены</span>
+        <p>Администрация — <a class='link' href='#'>info@altvpn.ru</a></p>
+        <p>Партнерская программа — <a class='link' href='#'>partners@altvpn.ru</a></p>
+      </div>
+
+      <div class="footer__block">
+        <h3 class="footer__title">Языки</h3>
+        <ul>
+          <li><a href="#">Русский</a></li>
+          <li><a href="#">Английский</a></li>
+          <li><a href="#">Украинский</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Социальные сети</h3>
+        <div class="social-list">
+          <a href="#" class="social-list__item"><img src="img/icon-facebook.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-twitter.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-vk.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-telegram.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-google.svg"></a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">О нас</h3>
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Услуги</h3>
+        <ul>
+          <li><a href="#">VPN</a></li>
+          <li><a href="#">Proxy</a></li>
+          <li><a href="#">Цены</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Инструменты</h3>
+        <ul>
+          <li><a href="#">Аномайзер</a></li>
+          <li><a href="#">Прокси-чекер</a></li>
+          <li><a href="#">Тест скорости</a></li>
+          <li><a href="#">Еще...</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+  <script src="js/custom-select.js"></script>
+  <script src="js/server-load.js"></script>
+
+</body>
+
+</html>

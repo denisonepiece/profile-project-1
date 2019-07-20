@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proxy</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="header__logo" href="#">
+        <img class="header__logo-img" src="img/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item menu__item-active"><a href="#">VPN</a></li>
+          <li class="menu__item"><a href="#">PROXY</a></li>
+          <li class="menu__item"><a href="#">Инструменты</a></li>
+          <li class="menu__item"><a href="#">FAQ</a></li>
+          <li class="menu__item"><a href="#">Поддержка</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <span class="burger__center">
+        </span>
+      </div>
+    </div>
+  </header>
+  <main class="main proxy">
+    <section class="join">
+      <div class="container">
+        <h1 class="join__header">Proxy</h1>
+        <div class="join__body">
+          <div class="join__left">
+            <h2 class="h2-green">Интернет переходит
+              на новый уровень</h2>
+            <p class="text-v1">Максимальная защита передаваемых данных.
+              Сохранение инкогнито при работе в сети.
+              Снятие географических лимитов.</p>
+            <div class="os-list">
+              <span class="icon-windows"></span>
+              <span class="icon-apple"></span>
+              <span class="icon-linux"></span>
+              <span class="icon-ios"></span>
+              <span class="icon-android"></span>
+            </div>
+            <button class="btn btn-green">Попробовать бесплатно</button>
+            <a href="#settings" class="btn btn-blue">Купить</a>
+          </div>
+          <div class="join__right">
+            <img src="img/proxy/header-right.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="enter">
+      <div class="enter__overlay">
+        <div class="container">
+          <img class="enter__img" src="img/proxy/promo-code-right.png" alt="">
+          <h2 class="h2-green">Возьмите Инернет с собой, куда бы вы ни отправились</h2>
+          <input class="input" type="text" placeholder="Введите код">
+          <button class="btn btn-blue modal-code-btn modal-account-btn modal-account-active-btn modal-account-expired-btn">Подключиться</button>
+        </div>
+      </div>
+    </section>
+    <section class="tarifs">
+      <div class="container">
+        <h1 class="tarifs__header">Корпоративный <b>или оптовый заказ?</b></h1>
+        <a name="settings"></a>
+        <a href="support.html" class="btn btn-white">Напишите нам</a>
+        <div class="row-sb settings-row">
+          <div class="sub-settings">
+            <div class="sub-settings__item">
+              <p class="label">Выберите срок подписки (мес.):</p>
+              <div class="row-sb">
+                <div class="custom-select month">
+                  <select name="" id="">
+                    <option value="0">1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                  </select>
+                </div>
+                <input type="range" class="progress" min="100" max="1200" name="" id="">
+              </div>
+            </div>
+            <div class="sub-settings__item">
+              <div class="row-sb">
+                <p class="label">Количество IP-адресов:</p>
+              </div>
+              <div class="row-sb">
+                <input type="text" class="input count-ip" value="7">
+                <input type="range" class="progress" min="100" max="50000" name="" id="">
+              </div>
+              <div class="row-sb">
+                <div class="left">
+                  <p class="label">Выберите страну:</p>
+                  <div class="custom-select">
+                    <select name="" id="">
+                      <option value="0">Андора</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="3">4</option>
+                      <option value="3">5</option>
+                      <option value="3">6</option>
+                      <option value="3">7</option>
+                      <option value="3">8</option>
+                      <option value="3">9</option>
+                      <option value="3">10</option>
+                      <option value="3">11</option>
+                      <option value="3">12</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="right">
+                  <p class="label">Выберите город:</p>
+                  <div class="custom-select">
+                    <select name="" id="">
+                      <option value="0">Амстердам</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="3">4</option>
+                      <option value="3">5</option>
+                      <option value="3">6</option>
+                      <option value="3">7</option>
+                      <option value="3">8</option>
+                      <option value="3">9</option>
+                      <option value="3">10</option>
+                      <option value="3">11</option>
+                      <option value="3">12</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sub-settings__item">
+              <div class="label-with-close">
+                <p class="label">Количество IP-адресов:</p>
+                <span class="btn-remove"></span>
+              </div>
+              <div class="row-sb">
+                <input type="text" class="input count-ip" value="7">
+                <input type="range" class="progress" min="100" max="50000" name="" id="">
+              </div>
+              <div class="row-sb">
+                <div class="left">
+                  <p class="label">Выберите страну:</p>
+                  <div class="custom-select">
+                    <select name="" id="">
+                      <option value="0">Андора</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="right">
+                  <p class="label">Выберите город:</p>
+                  <div class="custom-select">
+                    <select name="" id="">
+                      <option value="0">Амстердам</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="link">Выбрать еще прокси из другой страны</a>
+          </div>
+          <div class="sub-sum">
+            <h2>Сумма</h2>
+            <div class="row-sb">
+              <p>Тарифный план: <span class='plan'>Bronze</span></p>
+              <p>100 руб./шт.</p>
+            </div>
+            <div class="row-sb">
+              <p>Арендный период</p>
+              <p>30 дн.</p>
+            </div>
+            <div class="row-sb">
+              <p>Количество адресов</p>
+              <p>5 шт.</p>
+            </div>
+            <div class="row-sb total">
+              <p>Итого</p>
+              <span>5 шт.</span>
+            </div>
+            <div class="sub-sum__block">
+              <p class="label">Ваш e-mail:</p>
+              <input type="e-mail" class="input" placeholder="login@domain.ru">
+              <label class="checkbox">Я принимаю <a href='#' class='link'> условия соглашения</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="sub-sum__block">
+              <p class="label">Выберите способ оплаты:</p>
+              <div class="custom-select">
+                <select name="" id="">
+                  <option value="0">Карты Visa/Mastercard</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+            </div>
+            <div class="sub-sum__block">
+              <p class="label">Введите промо-код:</p>
+              <input type="text" class="input" placeholder="7ghfghfs">
+            </div>
+            <div class="sub-sum__block">
+              <button class="btn btn-blue modal-buy-proxy-btn">Продолжить далее</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pay-info">
+          <div class="pay-info__left">
+            <h2>Мы принимаем к оплате почти все:</h2>
+            <div class="pay-info__variants">
+              <img pay="pp" src="img/pay/paypal.png" alt="">
+              <img pay="visa" src="img/pay/visa.png" alt="">
+              <img pay="mc" src="img/pay/mastercard.png" alt="">
+              <img pay="qiwi" src="img/pay/qiwi.png" alt="">
+              <img pay="ym" src="img/pay/ym.png" alt="">
+              <img pay="wm" src="img/pay/webmoney.png" alt="">
+              <img pay="bc" src="img/pay/bitcoin.png" alt="">
+            </div>
+          </div>
+          <div class="pay-info__right">
+            <div class="pay-info__wm">
+              <!-- begin WebMoney Transfer : attestation label -->
+              <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=" target=_blank><img src="img/wm-1.png" title="Здесь находится аттестат нашего WM идентификатора " border="0">
+              </a>
+              <!-- end WebMoney Transfer : attestation label -->
+              <!-- begin WebMoney Transfer : attestation label -->
+              <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=" target=_blank><img src="img/wm-2.png" title="Здесь находится аттестат нашего WM идентификатора " border="0">
+              </a>
+              <!-- end WebMoney Transfer : attestation label -->
+            </div>
+            <p class="p-attention">Внимание: нажимая кнопку «Купить» вы подтверждаете,
+              что озна&shy;комились и согласны с правилами пользования и правилами
+              воз&shy;врата по гарантии.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h1 class="h1-black">Отвечаем на самые популярные вопросы наших клиентов</h1>
+        <span class="line"></span>
+        <div class="questions">
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+
+          <div class="questions__item">
+            <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+            <p>
+              В таких случае вам следует связаться с нами,
+              через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+              которую была оформлена покупка.
+            </p>
+          </div>
+          <div class="questions__row-with-img">
+            <div class="left">
+              <div class="questions__item">
+                <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+                <p>
+                  В таких случае вам следует связаться с нами,
+                  через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+                  которую была оформлена покупка.
+                </p>
+              </div>
+              <div class="questions__item">
+                <h2 class="h2-green">Что делать если я забыл код доступа?</h2>
+                <p>
+                  В таких случае вам следует связаться с нами,
+                  через форму <a href="#" class="link-blue">обратной связи</a>, указав ваш почтовый ящик на
+                  которую была оформлена покупка.
+                </p>
+              </div>
+              <h3>Остались вопросы? <a href="#" class="link-blue">Напишите нам</a></h3>
+            </div>
+            <img src="img/proxy/faq.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <span class="copyright">© 2019. ALTVPN. Все права защищены</span>
+        <p>Администрация — <a class='link' href='#'>info@altvpn.ru</a></p>
+        <p>Партнерская программа — <a class='link' href='#'>partners@altvpn.ru</a></p>
+      </div>
+
+      <div class="footer__block">
+        <h3 class="footer__title">Языки</h3>
+        <ul>
+          <li><a href="#">Русский</a></li>
+          <li><a href="#">Английский</a></li>
+          <li><a href="#">Украинский</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Социальные сети</h3>
+        <div class="social-list">
+          <a href="#" class="social-list__item"><img src="img/icon-facebook.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-twitter.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-vk.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-telegram.svg"></a>
+          <a href="#" class="social-list__item"><img src="img/icon-google.svg"></a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">О нас</h3>
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Услуги</h3>
+        <ul>
+          <li><a href="#">VPN</a></li>
+          <li><a href="#">Proxy</a></li>
+          <li><a href="#">Цены</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <h3 class="footer__title">Инструменты</h3>
+        <ul>
+          <li><a href="#">Аномайзер</a></li>
+          <li><a href="#">Прокси-чекер</a></li>
+          <li><a href="#">Тест скорости</a></li>
+          <li><a href="#">Еще...</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+
+  <div class="modal modal-buy modal-buy-proxy modal-hidden">
+    <div class="modal__body">
+      <h1 class="modal__header"><span>Оформление заказа PROXY</span> на 1 год</h1>
+      <span class="line"></span>
+      <form action="">
+        <div class="row-sb">
+          <input type="email" class="input" placeholder="Введите ваш e-mail">
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="0">Время действия</option>
+              <option value="1">Наличные</option>
+              <option value="2">Золото</option>
+              <option value="3">Натурой</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-sb">
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="0">Выберите страну</option>
+              <option value="1">Наличные</option>
+              <option value="2">Золото</option>
+              <option value="3">Натурой</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="0">Выберите город</option>
+              <option value="1">Наличные</option>
+              <option value="2">Золото</option>
+              <option value="3">Натурой</option>
+            </select>
+          </div>
+          <div class="custom-counter">
+            <div class="custom-counter__label">Количество</div>
+            <div class="custom-counter__up"></div>
+            <div class="custom-counter__value">1</div>
+            <div class="custom-counter__down"></div>
+            <input type="text">
+          </div>
+        </div>
+        <div class="row-sb">
+          <p>Если вы планируете приобретать более одного
+            IP-адреса из разных серверов или стран,
+            нажмите кнопку добавить.
+            После покупки личного IP-адреса
+            свяжитесь с поддержкой</p>
+          <button class="btn btn-blue" id='btn-add-ip'>Добавить</button>
+        </div>
+        <span class="line"></span>
+        <div class="pay-sistem__list">
+          <div class="pay-sistem__item">
+            <img src="img/icon-privat24.png" alt="">
+            <label class="radio"><b>Приват24</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/pay-4.png" alt="">
+            <label class="radio"><b>Яндекс</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/icon-bitcoin.png" alt="">
+            <label class="radio"><b>Bitcoin</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/pay-5.png" alt="">
+            <label class="radio"><b>Paypal</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/visa-master.png" alt="">
+            <label class="radio"><b>Visa/Mastercard</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item webmoney">
+            <img src="img/icon-wm.png" alt="">
+            <label class="radio"><b>WebMoney</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+            <div class="custom-select">
+              <select name="" id="">
+                <option value="0">WMR</option>
+                <option value="1">WMR</option>
+                <option value="2">WMZ</option>
+                <option value="3">WME</option>
+              </select>
+            </div>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/icon-qiwi.png" alt="">
+            <label class="radio"><b>Qiwi</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/pay-7.png" alt="">
+            <label class="radio"><b>SMS-платежи</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row-sb">
+          <div class="promos">
+            <input type="text" class="input" placeholder="Ваш promo-код">
+            <button class="btn btn-blue modal-code-btn">Применить</button>
+          </div>
+
+          <div class="total">
+            <div class="total__price">
+              <span class="sail">ВАША СКИДКА: <span class="sail__value"> 25%</span></span><br>
+              Сумма к оплате: <span class="price">15 777 руб.</span>
+            </div>
+            <button class="btn btn-green">Купить</button>
+          </div>
+        </div>
+      </form>
+
+      <span class="btn-close" id="btn-close"></span>
+      <span id="dlt-row" class="btn-remove" style='display: none'></span>
+
+    </div>
+  </div>
+
+  <div class="modal modal-code modal-hidden">
+    <div class="modal__body">
+      <h1 class="modal__header"><span>Спасибо за интерес к</span> нашему сервису!</h1>
+      <div class="text-important">
+        <p>Для работы с нашим сервисом вам требуется ввести код доступа, получить его можно <a href="#" class="link-blue">бесплатно на сутки</a> или
+          <a href="#" class="link-blue"> приобрести </a> подписку на длительный срок.</p>
+      </div>
+      <p>После приобретения кода, закройте это окно и еще раз введите ваш код, а после нажмите подключиться.</p>
+      <span class="btn-close" id="btn-close"></span>
+    </div>
+  </div>
+
+  <div class="modal modal-account modal-hidden">
+    <div class="modal__body">
+      <h1 class="modal__header"><span>Личный </span> кабинет</h1>
+      <span class="line"></span>
+      <div class="code-proxy row-sb">
+        <p>Ваш код:<span class="span-green">634прфвпр</span></p>
+        <p>Тип прокси: <span class="span-green">HTTP(S)/SOCKS</span></p>
+      </div>
+      <div class="text-important">
+        <div class="row-sb">
+          <p>Время окончания: <span class="span-red">аккаунт не активирован</span></p>
+          <p class="right">Для активации прокси серверов
+            обратитесь в <a href="#" class="link-blue"> поддержку</a>.</p>
+        </div>
+      </div>
+      <div class="popular-answer">
+        <h1 class="h1-black">Популярные ответы на часто задаваемые вопросы</h1>
+        <ul>
+          <li><a href="#" class="link-blue">Настройка прокси сервера в разных браузерах</a></li>
+          <li><a href="#" class="link-blue">Как продлить выборочные сервера по окончанию премиум-кода?</a></li>
+          <li><a href="#" class="link-blue">Почему при проверке через чекер говорит, что прокси не валидные?</a></li>
+          <li><a href="#" class="link-blue">Как получить другой тип прокси, если купил не то, что хотел?</a></li>
+          <li><a href="#" class="link-blue">Как докупить к существующему аккунту дополнительные прокси сервера?</a></li>
+          <li><a href="#" class="link-blue">Как настроить прокси в программе socialhammer?</a></li>
+        </ul>
+      </div>
+      <span class="line"></span>
+      <p class="p-semibold">Больше информации можно найти в расширенной базе знаний. Если вы не нашли ответа на свой
+        вопрос — <a href="#" class="link-blue">напишите нам</a>.</p>
+      <span class="btn-close" id="btn-close"></span>
+    </div>
+  </div>
+
+  <div class="modal modal-account modal-account-active modal-hidden ">
+    <div class="modal__body">
+      <h1 class="modal__header"><span>Личный </span> кабинет</h1>
+      <span class="line"></span>
+      <div class="code-proxy row-sb">
+        <p>Ваш код:<br> <span class="span-green">634прфвпр</span></p>
+        <div class="right">
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="0">Выберите тип прокси</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+          <button class="btn btn-green">Скачать прокси</button>
+        </div>
+      </div>
+      <div class="text-important">
+        <div class="row-sb">
+          <p>Время окончания: <span class="span-red">2018-27-01</span></p>
+          <button class="btn btn-blue modal-extension-ip-btn">Продлить аккаунт</button>
+        </div>
+      </div>
+      <div class="extension-block">
+        <div class="extension-block__top">
+          <div class="extension-block__top__left">
+            <div class="custom-select">
+              <select name="" id="">
+                <option value="0">Cрок продления</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+            <div class="custom-select">
+              <select name="" id="">
+                <option value="0">Платежная система</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="extension-block__top__right">
+            <input type="text" class="input" placeholder="Ваш promo-код">
+            <button class="btn btn-blue">Применить код</button>
+          </div>
+        </div>
+        <div class="extension-block__bottom">
+          <div class="total__price">
+            <span class="sail">ВАША СКИДКА: <span class="sail__value"> 25%</span></span><br>
+            Сумма к оплате: <span class="price">15 777 руб.</span>
+          </div>
+          <button class="btn btn-green">Продлить аккаунт</button>
+        </div>
+      </div>
+      <div class="popular-answer">
+        <h1 class="h1-black">Популярные ответы на часто задаваемые вопросы</h1>
+        <ul>
+          <li><a href="#" class="link-blue">Настройка прокси сервера в разных браузерах</a></li>
+          <li><a href="#" class="link-blue">Как продлить выборочные сервера по окончанию премиум-кода?</a></li>
+          <li><a href="#" class="link-blue">Почему при проверке через чекер говорит, что прокси не валидные?</a></li>
+          <li><a href="#" class="link-blue">Как получить другой тип прокси, если купил не то, что хотел?</a></li>
+          <li><a href="#" class="link-blue">Как докупить к существующему аккунту дополнительные прокси сервера?</a></li>
+          <li><a href="#" class="link-blue">Как настроить прокси в программе socialhammer?</a></li>
+        </ul>
+      </div>
+      <span class="line"></span>
+      <p class="p-semibold">Больше информации можно найти в расширенной базе знаний. Если вы не нашли ответа на свой
+        вопрос — <a href="#" class="link-blue">напишите нам</a>.</p>
+      <span class="btn-close" id="btn-close"></span>
+    </div>
+  </div>
+
+  <div class="modal modal-account modal-account-expired">
+    <div class="modal__body">
+      <h1 class="modal__header"><span>Личный </span> кабинет</h1>
+      <span class="line"></span>
+      <div class="code-proxy row-sb">
+        <p>Ваш код доступа: <span class="span-green">634прфвпр</span></p>
+        <p class="proxy-type">Тип прокси: <span class="span-green">HTTP(S)/SOCKS</span></p>
+      </div>
+      <div class="text-important">
+        <div class="row-sb">
+          <span class="span-red">Время действия аккаунта закончилось</span>
+          <button class="btn btn-blue modal-extension-ip-btn">Продлить аккаунт</button>
+        </div>
+      </div>
+      <div class="popular-answer">
+        <h1 class="h1-black">Популярные ответы на часто задаваемые вопросы</h1>
+        <ul>
+          <li><a href="#" class="link-blue">Настройка прокси сервера в разных браузерах</a></li>
+          <li><a href="#" class="link-blue">Как продлить выборочные сервера по окончанию премиум-кода?</a></li>
+          <li><a href="#" class="link-blue">Почему при проверке через чекер говорит, что прокси не валидные?</a></li>
+          <li><a href="#" class="link-blue">Как получить другой тип прокси, если купил не то, что хотел?</a></li>
+          <li><a href="#" class="link-blue">Как докупить к существующему аккунту дополнительные прокси сервера?</a></li>
+          <li><a href="#" class="link-blue">Как настроить прокси в программе socialhammer?</a></li>
+        </ul>
+      </div>
+      <span class="line"></span>
+      <p class="p-semibold">Больше информации можно найти в расширенной базе знаний. Если вы не нашли ответа на свой
+        вопрос — <a href="#" class="link-blue">напишите нам</a>.</p>
+      <span class="btn-close" id="btn-close"></span>
+    </div>
+  </div>
+
+  <div class="modal modal-buy modal-extension-ip modal-hidden">
+    <div class="modal__body">
+      <h1 class="modal__header"><span>Личный</span> кабинет</h1>
+      <span class="line"></span>
+      <form action="">
+        <div class="row-sb">
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="0">Время действия</option>
+              <option value="1">Наличные</option>
+              <option value="2">Золото</option>
+              <option value="3">Натурой</option>
+            </select>
+          </div>
+          <div class="right">
+            <p class="p-semibold">Необходимо продлить определенные IP-адреса?</p>
+            <button class="btn btn-blue" id='btn-add-ip'>Добавить</button>
+          </div>
+        </div>
+
+        <div id="ip-address" class="hidden">
+          <span class="line"></span>
+          <div class="ip-address__list">
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">192.188.5.257
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <span class="line"></span>
+        <div class="pay-sistem__list">
+          <div class="pay-sistem__item">
+            <img src="img/icon-privat24.png" alt="">
+            <label class="radio"><b>Приват24</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/pay-4.png" alt="">
+            <label class="radio"><b>Яндекс</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/icon-bitcoin.png" alt="">
+            <label class="radio"><b>Bitcoin</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/pay-5.png" alt="">
+            <label class="radio"><b>Paypal</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/visa-master.png" alt="">
+            <label class="radio"><b>Visa/Mastercard</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item webmoney">
+            <img src="img/icon-wm.png" alt="">
+            <label class="radio"><b>WebMoney</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+            <div class="custom-select">
+              <select name="" id="">
+                <option value="0">WMR</option>
+                <option value="1">WMR</option>
+                <option value="2">WMZ</option>
+                <option value="3">WME</option>
+              </select>
+            </div>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/icon-qiwi.png" alt="">
+            <label class="radio"><b>Qiwi</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+          <div class="pay-sistem__item">
+            <img src="img/pay-7.png" alt="">
+            <label class="radio"><b>SMS-платежи</b>
+              <input type="radio" name="radio">
+              <span class="radio__cm"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row-sb">
+          <div class="promos">
+            <input type="text" class="input" placeholder="Ваш promo-код">
+            <button class="btn btn-blue modal-code-btn">Применить</button>
+          </div>
+
+          <div class="total">
+            <div class="total__price">
+              <span class="sail">ВАША СКИДКА: <span class="sail__value"> 25%</span></span><br>
+              Сумма к оплате: <span class="price">15 777 руб.</span>
+            </div>
+            <button class="btn btn-green">Купить</button>
+          </div>
+        </div>
+      </form>
+      <span class="btn-close" id="btn-close"></span>
+      <span id="dlt-row" class="btn-remove" style='display: none'></span>
+    </div>
+  </div>
+
+  <!-- /Modals -->
+
+  <script src="js/header.js"></script>
+  <script src="js/custom-select.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/proxy.js"></script>
+
+</body>
+
+</html>

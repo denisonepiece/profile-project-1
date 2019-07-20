@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proxy-checker</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,700|Open+Sans:400,600,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="proxy-list-body">
+<header class="header">
+  <div class="container">
+    <a class="header__logo" href="#">
+      <img class="header__logo-img" src="img/logo.png" alt="logo">
+    </a>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#">Главная</a></li>
+        <li class="menu__item menu__item-active"><a href="#">VPN</a></li>
+        <li class="menu__item"><a href="#">PROXY</a></li>
+        <li class="menu__item"><a href="#">Инструменты</a></li>
+        <li class="menu__item"><a href="#">FAQ</a></li>
+        <li class="menu__item"><a href="#">Поддержка</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+        <span class="burger__center">
+        </span>
+    </div>
+  </div>
+</header>
+<main class="main proxy-list proxy-checker">
+  <div class="container">
+    <h1 class="main__title main__title_with-sub">Proxy-листы</h1>
+    <p class="main__sub-title">Высокая скорость проверки в 64 потока и умные алгоритмы распознавания прокси в списках.
+      Проверка прокси по множеству параметров, включая пинг, скорость соединения и степень анонимности.
+      Потоковый вывод результатов с гибкой настройкой и экспорт только необходимых результатов.</p>
+  </div>
+  <section class="proxy-list__filter">
+    <div class="container">
+      <form action="">
+        <div class="proxy-list__inputs">
+          <div class="left">
+
+            <div class="input-with-label">
+              <p class="label">Список proxy:</p>
+              <textarea class="textarea" name="" id="" cols="30" rows="10"
+                        placeholder="1517, 2057, 2050, 2527, 5077"></textarea>
+            </div>
+          </div>
+          <div class="right">
+            <p class="label">Отображать:</p>
+            <div class="row">
+              <div class="proxy-list__checkboxes">
+                <label class="checkbox">HTTP
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">HTTPS
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Socks 4
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Socks 5
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="proxy-list__checkboxes">
+                <label class="checkbox">Нерабочие
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Не проверенные
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Таблица результатов
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="line"></span>
+        <div class="bottom var1">
+          <button class="btn btn-blue">Начать текущую проверку</button>
+          <button class="btn btn-green">Добавить к текущему</button>
+          <button class="btn btn-grey">Запросить API доступ</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="checker">
+    <div class="container">
+      <div class="checker__content">
+        <div class="checker__header">
+          <p>Проверено: <span class="span-blue">7 из 10 (75%)</span></p>
+          <p>
+            <span>0 строк без proxy</span>
+            <span class="span-green">0 повторов</span>
+            <span class="span-blue">0 рабочих</span>
+            <span class="span-red">1 нерабочий</span>
+          </p>
+        </div>
+        <div class="checker-progressbar">
+          <div class="checker-progressbar__bar">
+            <div class="checker-progressbar__core" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="export">
+          <p>Результат проверки:</p>
+          <a href="#" class="export__item">
+            <img src="img/icon-text.png" alt="">
+            загрузить в .txt
+          </a>
+          <a href="#" class="export__item">
+            <img src="img/icon-exel.png" alt="">
+            таблицей стилей в .csv
+          </a>
+          <a href="#" class="export__item">
+            <img src="img/icon-ip-port.png" alt="">
+            Открыть в новом окне
+          </a>
+        </div>
+      </div>
+      <img class="checker__img" src="img/Proxy-servers.png" alt="">
+    </div>
+  </section>
+  <div class="container">
+    <section class="proxy-table">
+      <div class="proxy-table__row proxy-table__row-heading">
+        <div class="proxy-table__cell">ip-адрес</div>
+        <div class="proxy-table__cell">Порт</div>
+        <div class="proxy-table__cell">Страна/Город</div>
+        <div class="proxy-table__cell">Скорость</div>
+        <div class="proxy-table__cell">Тип</div>
+        <div class="proxy-table__cell">Анонимность</div>
+        <div class="proxy-table__cell">Обновление</div>
+      </div>
+      <div class="proxy-table__row">
+        <div class="proxy-table__cell">177.17.157.7</div>
+        <div class="proxy-table__cell">8080</div>
+        <div class="proxy-table__cell">
+          <h2 class="h2-green">
+            <img src="img/canada.png" alt="">Монреаль<br><span>Канада</span>
+          </h2>
+        </div>
+        <div class="proxy-table__cell">
+          <div class="stars">
+            <!--Изменить процент для установки колличества звезд, одна звезда 20%-->
+            <span class="stars__active" style="width: 20%">
+              <span class="stars__layout"></span>
+            </span>
+          </div>
+        </div>
+        <div class="proxy-table__cell">HTTP</div>
+        <div class="proxy-table__cell">Высокая</div>
+        <div class="proxy-table__cell">7 минут</div>
+      </div>
+      <div class="proxy-table__row">
+        <div class="proxy-table__cell">177.17.157.7</div>
+        <div class="proxy-table__cell">8080</div>
+        <div class="proxy-table__cell">
+          <h2 class="h2-green">
+            <img src="img/canada.png" alt="">Монреаль<br><span>Канада</span>
+          </h2>
+        </div>
+        <div class="proxy-table__cell">
+          <div class="stars">
+            <!--Изменить процент для установки колличества звезд, одна звезда 20%-->
+            <span class="stars__active" style="width: 40%">
+              <span class="stars__layout"></span>
+            </span>
+          </div>
+        </div>
+        <div class="proxy-table__cell">HTTP</div>
+        <div class="proxy-table__cell">Высокая</div>
+        <div class="proxy-table__cell">7 минут</div>
+      </div>
+      <div class="proxy-table__row">
+        <div class="proxy-table__cell">177.17.157.7</div>
+        <div class="proxy-table__cell">8080</div>
+        <div class="proxy-table__cell">
+          <h2 class="h2-green">
+            <img src="img/canada.png" alt="">Монреаль<br><span>Канада</span>
+          </h2>
+        </div>
+        <div class="proxy-table__cell">
+          <div class="stars">
+            <!--Изменить процент для установки колличества звезд, одна звезда 20%-->
+            <span class="stars__active" style="width: 70%">
+              <span class="stars__layout"></span>
+            </span>
+          </div>
+        </div>
+        <div class="proxy-table__cell">HTTP</div>
+        <div class="proxy-table__cell">Высокая</div>
+        <div class="proxy-table__cell">7 минут</div>
+      </div>
+      <div class="proxy-table__row">
+        <div class="proxy-table__cell">177.17.157.7</div>
+        <div class="proxy-table__cell">8080</div>
+        <div class="proxy-table__cell">
+          <h2 class="h2-green">
+            <img src="img/canada.png" alt="">Монреаль<br><span>Канада</span>
+          </h2>
+        </div>
+        <div class="proxy-table__cell">
+          <div class="stars">
+            <!--Изменить процент для установки колличества звезд, одна звезда 20%-->
+            <span class="stars__active" style="width: 100%">
+              <span class="stars__layout"></span>
+            </span>
+          </div>
+        </div>
+        <div class="proxy-table__cell">HTTP</div>
+        <div class="proxy-table__cell">Высокая</div>
+        <div class="proxy-table__cell">7 минут</div>
+      </div>
+    </section>
+    <div class="pagination">
+      <a href="#" class="link-back">Назад</a>
+
+      <ul class="pagination__list">
+        <li class="pagination__item "><a href="#">1</a></li>
+        <li class="pagination__item "><a href="#">2</a></li>
+        <li class="pagination__item "><a href="#">3</a></li>
+        <li class="pagination__item "><a href="#">4</a></li>
+        <li class="pagination__item "><a href="#">5</a></li>
+        <li class="pagination__item "><a href="#">6</a></li>
+        <li class="pagination__item pagination__item-current"><a href="#">7</a></li>
+        <li class="pagination__item "><a href="#">8</a></li>
+        <li class="pagination__item "><a href="#">9</a></li>
+        <li class="pagination__item "><a href="#">10</a></li>
+      </ul>
+
+      <a href="#" class="link-forward">Вперед</a>
+    </div>
+  </div>
+
+  <section class="another-products">
+    <div class="container">
+      <div class="another-products__body">
+        <img src="img/another-products-left.png" alt="">
+        <h1>А вы уже попробовали наши другие продукты?</h1>
+        <a href="#" class="btn btn-blue">Перейти</a>
+      </div>
+      <p>Наш VPN сервис работает на всех ваших любимых устройствах, включая игровые приставки, смартфоны и
+        Smart-телевизоры, поддерживающие подключение к интернету. Вы даже можете использовать наш сервис на двух
+        устройствах одновременно. Наш VPN сервис работает на всех ваших любимых устройствах, включая игровые приставки,
+        смартфоны и Smart-телевизоры, поддерживающие подключение к интернету. Вы даже можете использовать наш сервис на
+        двух устройствах одновременно. Наш VPN сервис работает на всех ваших любимых устройствах, включая игровые
+        приставки, смартфоны и Smart-телевизоры, поддерживающие подключение к интернету. Вы даже можете использовать наш
+        сервис на двух устройствах одновременно. Наш VPN сервис работает на всех ваших любимых устройствах, включая
+        игровые приставки, смартфоны и Smart-телевизоры, поддерживающие подключение к интернету.
+        Вы даже можете использовать наш сервис на двух устройствах одновременно.</p>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__block">
+      <span class="copyright">© 2019. ALTVPN. Все права защищены</span>
+      <p>Администрация — <a class='link' href='#'>info@altvpn.ru</a></p>
+      <p>Партнерская программа — <a class='link' href='#'>partners@altvpn.ru</a></p>
+    </div>
+
+    <div class="footer__block">
+      <h3 class="footer__title">Языки</h3>
+      <ul>
+        <li><a href="#">Русский</a></li>
+        <li><a href="#">Английский</a></li>
+        <li><a href="#">Украинский</a></li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <h3 class="footer__title">Социальные сети</h3>
+      <div class="social-list">
+        <a href="#" class="social-list__item"><img src="img/icon-facebook.svg"></a>
+        <a href="#" class="social-list__item"><img src="img/icon-twitter.svg"></a>
+        <a href="#" class="social-list__item"><img src="img/icon-vk.svg"></a>
+        <a href="#" class="social-list__item"><img src="img/icon-telegram.svg"></a>
+        <a href="#" class="social-list__item"><img src="img/icon-google.svg"></a>
+      </div>
+    </div>
+    <div class="footer__block">
+      <h3 class="footer__title">О нас</h3>
+      <ul>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Поддержка</a></li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <h3 class="footer__title">Услуги</h3>
+      <ul>
+        <li><a href="#">VPN</a></li>
+        <li><a href="#">Proxy</a></li>
+        <li><a href="#">Цены</a></li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <h3 class="footer__title">Инструменты</h3>
+      <ul>
+        <li><a href="#">Аномайзер</a></li>
+        <li><a href="#">Прокси-чекер</a></li>
+        <li><a href="#">Тест скорости</a></li>
+        <li><a href="#">Еще...</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!--Modals start-->
+<div class="modal modal-buy modal-hidden">
+  <div class="modal__body">
+    <form action="">
+      <div class="modal-buy__many-ip">
+        <div class="left">
+          <p>Если вы планируете приобретать более одного IP-адреса из разных серверов или стран, нажмите кнопку
+            добавить.
+            После покупки личного IP-адреса свяжитесь с поддержкой. Если вы планируете приобретать более одного
+            IP-адреса
+            из разных серверов или стран, нажмите кнопку добавить. После покупки личного IP-адреса свяжитесь с
+            поддержкой.</p>
+          <p>Если вы планируете приобретать более одного IP-адреса из разных серверов или стран, нажмите кнопку
+            добавить.
+            После покупки личного IP-адреса свяжитесь с поддержкой.</p>
+        </div>
+        <div class="right">
+          <label class="checkbox">1 месяц = 100 рублей
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Арендовать личный IP
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Арендовать личный IP
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">12 месяцев = 700 рублей
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div class="pay-sistem__list">
+        <div class="pay-sistem__item">
+          <img src="img/icon-privat24.png" alt="">
+          <label class="radio"><b>Приват24</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+        <div class="pay-sistem__item">
+          <img src="img/pay-4.png" alt="">
+          <label class="radio"><b>Яндекс</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+        <div class="pay-sistem__item">
+          <img src="img/icon-bitcoin.png" alt="">
+          <label class="radio"><b>Bitcoin</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+        <div class="pay-sistem__item">
+          <img src="img/pay-5.png" alt="">
+          <label class="radio"><b>Paypal</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+        <div class="pay-sistem__item">
+          <img src="img/visa-master.png" alt="">
+          <label class="radio"><b>Visa/Mastercard</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+        <div class="pay-sistem__item webmoney">
+          <img src="img/icon-wm.png" alt="">
+          <label class="radio"><b>WebMoney</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="0">WMR</option>
+              <option value="1">WMR</option>
+              <option value="2">WMZ</option>
+              <option value="3">WME</option>
+            </select>
+            <div class="select-selected">WMR</div>
+            <div class="select-items select-hide">
+              <div>WMR</div>
+              <div>WMZ</div>
+              <div>WME</div>
+            </div>
+          </div>
+        </div>
+        <div class="pay-sistem__item">
+          <img src="img/icon-qiwi.png" alt="">
+          <label class="radio"><b>Qiwi</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+        <div class="pay-sistem__item">
+          <img src="img/pay-7.png" alt="">
+          <label class="radio"><b>SMS-платежи</b>
+            <input type="radio" name="radio">
+            <span class="radio__cm"></span>
+          </label>
+        </div>
+      </div>
+      <div class="row-sb">
+        <div class="promos">
+          <input type="text" class="input" placeholder="Ваш promo-код">
+          <button class="btn btn-blue modal-code-btn">Применить</button>
+        </div>
+
+        <div class="total">
+          <div class="total__price">
+            <span class="sail">ВАША СКИДКА: <span class="sail__value"> 25%</span></span><br>
+            Сумма к оплате: <span class="price">15 777 руб.</span>
+          </div>
+          <button class="btn btn-green">Купить</button>
+        </div>
+      </div>
+    </form>
+    <span class="btn-close" id="btn-close"></span>
+    <span id="dlt-row" class="btn-remove" style="display: none"></span>
+  </div>
+</div>
+
+<div class="modal modal-api modal-hidden">
+  <div class="modal__body">
+    <p>CP - протокол в отличии от UDP ориентирован на соединение - гарантирует доставку пакетов заданном порядке и имеет
+      стабилное подключение. Скачать установочный файл можно тут - скачать. После, нажмите кнопку ниже - "Скачать
+      конфигурацию".</p>
+
+    <p>CP - протокол в отличии от UDP ориентирован на соединение - гарантирует доставку пакетов заданном порядке и имеет
+      стабилное подключение. Скачать установочный файл можно тут - скачать. После, нажмите кнопку ниже - "Скачать
+      конфигурацию". CP - протокол в отличии от UDP ориентирован на соединение - гарантирует доставку пакетов заданном
+      порядке и имеет стабилное подключение. Скачать установочный файл можно тут - скачать. После, нажмите кнопку ниже -
+      "Скачать конфигурацию". CP - протокол в отличии от UDP ориентирован на соединение - гарантирует доставку пакетов
+      заданном порядке и имеет стабилное подключение. Скачать установочный файл можно тут - скачать. После, нажмите
+      кнопку ниже - "Скачать конфигурацию".</p>
+
+    <p>CP - протокол в отличии от UDP ориентирован на соединение - гарантирует доставку пакетов заданном порядке и имеет
+      стабилное подключение. Скачать установочный файл можно тут - скачать. После, нажмите кнопку ниже - "Скачать
+      конфигурацию".</p>
+    <span class="btn-close" id="btn-close"></span>
+  </div>
+</div>
+
+<div class="modal modal-flags modal-hidden">
+  <div class="modal__body">
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkbox">Russia(322)
+      <img src="img/rus.png" alt="">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <span class="btn-close" id="btn-close"></span>
+  </div>
+</div>
+<!--Modals end-->
+
+<script src="js/header.js"></script>
+<script src="js/custom-select.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/proxy-list.js"></script>
+
+</body>
+
+</html>

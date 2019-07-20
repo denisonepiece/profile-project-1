@@ -1,12 +1,15 @@
-@import 'normalize';
-@import 'typography';
-@import 'header';
 @import 'preview';
+@import 'normalize';
+@import 'colors';
+@import 'typography';
+@import 'aside';
+@import 'header';
 @import 'about';
-
+@import 'portfolio';
 
 body {
 	background-color: #ffffff;
+	overflow: hidden;
 }
 
 ul {
@@ -20,16 +23,23 @@ a {
 	color: inherit;
 }
 
-main {
-	padding-top: 7rem;
-	background-color: #ffffff;
-}
-
 .container {
 	max-width: 1160px;
 	margin: 0 auto;
 	padding: 0 2rem;
 }
 
-@import 'stab';
+.wrapper {
+	display: flex;
+	height: 100%;
+}
+
+.main {
+	width: calc(100% - 5rem);
+	margin-left: 5rem;
+	background-color: #ffffff;
+}
+
 @import 'media995';
+@import 'media991';
+@import 'media768';

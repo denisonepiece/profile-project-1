@@ -22,7 +22,9 @@
     "eslint-config-google": "^0.13.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
     "node-normalize-scss": "^8.0.0"
   }
 }

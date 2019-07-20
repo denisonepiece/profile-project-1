@@ -1,102 +1,129 @@
 .preview {
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-  background-color: #fff;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	display: flex; //For work change on flex
+	align-items: center;
+	z-index: 1000;
+	background-color: #fff;
 
-  display: none;
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		opacity: 0;
+		transition: 2s;
+	}
 }
 
 .title {
-  margin-right: 50px;
+	margin-right: 50px;
 }
 
 .title__nickname {
-  font-size: 6rem;
-  position: relative;
-  overflow: hidden;
+	font-size: 6rem;
+	position: relative;
+	overflow: hidden;
 }
 
 .nick-left {
-  margin-right: 142px;
+	margin-right: 163px;
 }
 
 .nick-numbers {
-  left: 140px;
-  top: 0;
-  height: 6rem;
-  text-align: center;
-  position: absolute;
-  display: block;
-  width: 200px;
+	left: 163px;
+	top: -400px;
+	height: 6rem;
+	text-align: center;
+	position: absolute;
+	display: block;
+	width: 200px;
 }
 
 .pizza {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 
-  height: 400px;
-  width: 384px;
+	height: 400px;
+	width: 384px;
 
-  img {
-    height: 180px;
-    position: absolute;
-    // transition: 0.5s;
-    opacity: 1;
+	img {
+		height: 180px;
+		position: absolute;
+		transition: 0.5s;
+		opacity: 1;
 
-  }
+	}
 
-  .hidden {
-    display: none;
-  }
+	.hidden {
+		display: none;
+	}
 
-  .one {
-    transform: rotate(-90deg);
-    left: 0px;
-    top: 118px;
-  }
+	.one {
+		transform: rotate(-90deg);
+		left: 0px;
+		top: 118px;
+	}
 
-  .two {
-    transform: rotate(-30deg);
-    left: 54px;
-    top: 31px;
-  }
+	.two {
+		transform: rotate(-30deg);
+		left: 54px;
+		top: 31px;
+	}
 
-  .three {
-    transform: rotate(29deg);
-    left: 152px;
-    top: 31px;
-  }
+	.three {
+		transform: rotate(29deg);
+		left: 152px;
+		top: 31px;
+	}
 
-  .four {
-    transform: rotate(89deg);
-    left: 204px;
-    top: 116px;
-  }
+	.four {
+		transform: rotate(89deg);
+		left: 204px;
+		top: 116px;
+	}
 
-  .five {
-    transform: rotate(144deg);
-    left: 164px;
-    top: 199px;
-  }
+	.five {
+		transform: rotate(144deg);
+		left: 164px;
+		top: 199px;
+	}
 
-  .six {
-    transform: rotate(198deg);
-    left: 72px;
-    top: 214px;
-  }
+	.six {
+		transform: rotate(198deg);
+		left: 72px;
+		top: 214px;
+	}
+}
 
+@media screen and (max-width: 580px) {
+	.title__nickname {
+		font-size: 3rem;
+		transform: translateY(85px);
+		margin: 0;
+	}
 
+	.nick-left {
+		margin-right: 100px;
+	}
 
+	.nick-numbers {
+		left: 100px;
+		width: 85px;
+		height: 400px;
+		line-height: 70px;
+		margin-top: -18px;
+	}
+
+	.pizza {
+		transform: scale(0.5);
+	}
+
+	.preview {
+		.container {
+			position: absolute;
+		}
+	}
 }
