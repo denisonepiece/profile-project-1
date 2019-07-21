@@ -763,10 +763,9 @@ em {
 
 .case__image {
   width: 50%;
+  height: 100%;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.24);
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.24); }
-  .case__image img {
-    width: 100%; }
 
 .subscription {
   margin-right: 4rem;
