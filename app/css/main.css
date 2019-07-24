@@ -466,6 +466,7 @@ em {
   width: 5rem;
   position: fixed;
   left: 0;
+  bottom: 0;
   height: 100vh;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
@@ -498,7 +499,7 @@ em {
 .progress-bar__indicator {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 3px;
   background: #333; }
 
@@ -556,15 +557,15 @@ em {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
-  padding: 0 10px;
+  padding: 0 1rem;
   z-index: -1;
   -webkit-transition: left 0.4s, -webkit-box-shadow 0s;
   transition: left 0.4s, -webkit-box-shadow 0s;
   -o-transition: left 0.4s, box-shadow 0s;
   transition: left 0.4s, box-shadow 0s;
   transition: left 0.4s, box-shadow 0s, -webkit-box-shadow 0s;
-  -webkit-box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1); }
 
 .social__data-open {
   left: 4rem;
@@ -573,15 +574,14 @@ em {
   -o-transition: left 0.4s, box-shadow 2.5s;
   transition: left 0.4s, box-shadow 2.5s;
   transition: left 0.4s, box-shadow 2.5s, -webkit-box-shadow 2.5s;
-  -webkit-box-shadow: 2rem 0rem 3rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 2rem 0rem 3rem 1rem rgba(0, 0, 0, 0.1);
-  font-size: 13px; }
+  -webkit-box-shadow: 2rem 0 3rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 2rem 0 3rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem; }
 
 .btn-link, .btn-copy {
   display: block;
   background: #333;
   border: none;
-  color: #333333;
   padding: 0.5rem 1rem;
   color: #fff;
   -webkit-border-radius: 92px;
@@ -593,7 +593,7 @@ em {
   border: 1px solid #575757;
   color: #333333;
   padding: 0.4rem 0.9rem;
-  margin: 0 5px;
+  margin: 0 0.5rem;
   cursor: pointer; }
 
 .icon {
@@ -671,11 +671,11 @@ em {
           flex-wrap: wrap; }
 
 .soft-skill__item {
-  margin-right: 10px;
-  margin-bottom: 8px;
+  margin-right: 1rem;
+  margin-bottom: 0.8rem;
   position: relative;
   color: #333333;
-  padding: 0 15px;
+  padding: 0 1.5rem;
   border: 2px solid #333333; }
   .soft-skill__item:last-child {
     margin-right: 0; }
@@ -895,6 +895,8 @@ a {
     margin-right: 0; } }
 
 @media screen and (max-width: 991px) {
+  html {
+    font-size: 9px; }
   .case {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -902,6 +904,8 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-bottom: 5rem; }
+    .case p {
+      font-size: 1.5rem; }
   .case_reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -920,6 +924,8 @@ a {
     margin-top: 1.5rem; } }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 8px; }
   .another-cases__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -931,7 +937,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column; }
     .another-cases__list li {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       width: 100%; }
   .another-cases {
     margin-bottom: 1rem; }

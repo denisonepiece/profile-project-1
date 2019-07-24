@@ -52,11 +52,11 @@
 }
 
 .soft-skill__item {
-	margin-right: 10px;
-	margin-bottom: 8px;
+	margin-right: 1rem;
+	margin-bottom: 0.8rem;
 	position: relative;
 	color: $accent-text-color;
-	padding: 0 15px;
+	padding: 0 1.5rem;
 	border: 2px solid $accent-text-color;
 
 	&:last-child {
