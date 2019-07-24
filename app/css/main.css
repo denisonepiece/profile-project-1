@@ -913,6 +913,7 @@ a {
     margin-right: 0; }
   .case__image {
     width: 100%;
+    height: auto;
     margin-right: 0;
     margin-bottom: 3rem; }
   .case__links {
