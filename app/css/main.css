@@ -683,7 +683,14 @@ em {
 .portfolio {
   margin-top: 10rem; }
   .portfolio h1 {
-    margin-bottom: 6rem; }
+    margin-bottom: 0; }
+
+.sub-small {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500; }
 
 .case {
   display: -webkit-box;
@@ -942,6 +949,4 @@ a {
   .another-cases {
     margin-bottom: 1rem; }
   .portfolio {
-    margin-top: 4rem; }
-    .portfolio h1 {
-      margin-bottom: 3rem; } }
+    margin-top: 4rem; } }
