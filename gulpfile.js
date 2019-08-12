@@ -24,15 +24,6 @@ gulp.task('js', function() {
       .pipe(gulp.dest('app'));
 });
 
-gulp.task('autoprefixer', () =>
-  gulp.src('app/css/main.css')
-      .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false,
-      }))
-      .pipe(gulp.dest('css'))
-);
-
 gulp.task('serve', gulp.series(['sass', 'js'], function() {
   browserSync.init({
     server: '',
@@ -42,18 +33,5 @@ gulp.task('serve', gulp.series(['sass', 'js'], function() {
   gulp.watch('app/js/*.js', gulp.series('js'));
   gulp.watch('*.html').on('change', browserSync.reload);
 }));
-
-gulp.task('build', function() {
-  const buildHtml = gulp.src('app/*.html')
-      .pipe(gulp.dest('dist'));
-  const buildJs = gulp.src('app/js/**/*.js')
-      .pipe(gulp.dest('dist/js'));
-  const buildsFonts = gulp.src('app/fonts/**/*')
-      .pipe(gulp.dest('dist/fonts'));
-  const buildCss = gulp.src(['app/css/**/*.css'])
-      .pipe(gulp.dest('dist/css'));
-  const dropImages = gulp.src('app/img/**/*')
-      .pipe(gulp.dest('dist/img'));
-});
 
 gulp.task('default', gulp.series('serve'));

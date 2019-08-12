@@ -3,9 +3,9 @@
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	height: 100vh;
-	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-	display: flex;
+	height: calc(100vh - 5rem);
+	box-shadow: 0 2.4rem 2rem rgba(0, 0, 0, 0.1);
+	display: none;
 	align-items: flex-end;
 	justify-content: center;
 	padding: 3rem 0;
@@ -17,7 +17,7 @@
 .progress-bar {
 	position: absolute;
 	width: 3px;
-	height: 100vh;
+	height: calc(100vh - 5rem);
 	background: #ffffff;
 	right: 0;
 	top: 0;
@@ -51,12 +51,16 @@
 	cursor: pointer;
 }
 
+.social__item:active {
+	transform: translateY(1px);
+}
+
 .social__data {
 	position: absolute;
 	background: #fff;
 	height: 3.5rem;
 	top: calc(50% - 3.5rem / 2);
-	left: -30rem;
+	left: -50rem;
 	border-radius: 0 10px 10px 0;
 	display: flex;
 	align-items: center;

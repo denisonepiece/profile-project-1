@@ -1,0 +1,43 @@
+.header-section {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow-y: hidden;
+  }
+}
+
+.header-section__title {
+  line-height: 6rem;
+  margin: 0;
+  color: $primary-text-color;
+
+  a {
+    text-decoration: underline;
+    color: $accent-text-color;
+  }
+}
+
+.header-section__image {
+  height: 60rem;
+  width: 60rem;
+  position: absolute;
+  right: -20rem;
+  top: -20rem;
+  z-index: -1;
+  animation: rotate 6s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

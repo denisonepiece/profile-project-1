@@ -4,12 +4,17 @@
 @import 'typography';
 @import 'aside';
 @import 'header';
+@import "header-section";
 @import 'about';
 @import 'portfolio';
 
+*:focus {
+	outline: none;
+}
+
 body {
 	background-color: #ffffff;
-	overflow: hidden;
+	//overflow: hidden; uncommit for right work preview
 }
 
 ul {
@@ -30,14 +35,10 @@ a {
 }
 
 .wrapper {
-	display: flex;
 	height: 100%;
 }
 
 .main {
-	width: calc(100% - 5rem);
-	margin-left: 5rem;
-	background-color: #ffffff;
 }
 
 @import 'media995';

@@ -3,10 +3,7 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -127,7 +124,7 @@
   .preview .container {
     position: absolute; } }
 
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -147,6 +144,12 @@ html {
  */
 body {
   margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -205,17 +208,14 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b,
-strong {
+b, strong {
   font-weight: bolder; }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-code,
-kbd,
-samp {
+code, kbd, samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
@@ -231,8 +231,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -258,11 +257,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
@@ -276,8 +271,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button,
-input {
+button, input {
   /* 1 */
   overflow: visible; }
 
@@ -285,37 +279,27 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button,
-select {
+button, select {
   /* 1 */
   text-transform: none; }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button; }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
 /**
@@ -361,8 +345,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* 1 */
@@ -372,8 +355,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -385,13 +367,12 @@ textarea {
   /* 1 */
   outline-offset: -2px;
   /* 2 */ }
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
@@ -421,15 +402,12 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-template {
+template, [hidden] {
   display: none; }
 
 /**
  * Add the correct display in IE 10.
  */
-[hidden] {
-  display: none; }
-
 html {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -467,13 +445,11 @@ em {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 100vh;
-  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  height: -webkit-calc(100vh - 5rem);
+  height: calc(100vh - 5rem);
+  -webkit-box-shadow: 0 2.4rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2.4rem 2rem rgba(0, 0, 0, 0.1);
+  display: none;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -491,7 +467,8 @@ em {
 .progress-bar {
   position: absolute;
   width: 3px;
-  height: 100vh;
+  height: -webkit-calc(100vh - 5rem);
+  height: calc(100vh - 5rem);
   background: #ffffff;
   right: 0;
   top: 0; }
@@ -539,15 +516,19 @@ em {
           align-items: center;
   cursor: pointer; }
 
+.social__item:active {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px); }
+
 .social__data {
   position: absolute;
   background: #fff;
   height: 3.5rem;
   top: -webkit-calc(50% - 3.5rem / 2);
   top: calc(50% - 3.5rem / 2);
-  left: -30rem;
-  -webkit-border-radius: 0 10px 10px 0;
-          border-radius: 0 10px 10px 0;
+  left: -50rem;
+  border-radius: 0 10px 10px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -584,8 +565,7 @@ em {
   border: none;
   padding: 0.5rem 1rem;
   color: #fff;
-  -webkit-border-radius: 92px;
-          border-radius: 92px;
+  border-radius: 92px;
   font-size: 1.1rem; }
 
 .btn-copy {
@@ -601,8 +581,7 @@ em {
   height: 3rem;
   width: 3rem;
   background-position: center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70%;
+  background-size: 70%;
   background-repeat: no-repeat; }
 
 .icon-vk {
@@ -622,6 +601,107 @@ em {
 
 .icon-github {
   background-image: url("../img/icon-github.svg"); }
+
+.header {
+  height: 7rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-size: 1.5rem;
+  z-index: 1010; }
+  .header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 0;
+    max-width: -webkit-calc(1160px + 4rem);
+    max-width: calc(1160px + 4rem); }
+  .header a {
+    padding: 1rem 2rem; }
+  .header a:hover {
+    color: #333333; }
+
+.nav {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700; }
+  .nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.header-section {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden; }
+  .header-section .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    overflow-y: hidden; }
+
+.header-section__title {
+  line-height: 6rem;
+  margin: 0;
+  color: #575757; }
+  .header-section__title a {
+    text-decoration: underline;
+    color: #333333; }
+
+.header-section__image {
+  height: 60rem;
+  width: 60rem;
+  position: absolute;
+  right: -20rem;
+  top: -20rem;
+  z-index: -1;
+  -webkit-animation: rotate 6s infinite linear;
+          animation: rotate 6s infinite linear; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 .about {
   line-height: 1.8; }
@@ -748,8 +828,7 @@ em {
   background-color: #333333;
   color: #FFFFFF;
   padding: 10px 25px;
-  -webkit-border-radius: 92px;
-          border-radius: 92px;
+  border-radius: 92px;
   -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.3s;
@@ -838,8 +917,7 @@ em {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    -webkit-border-radius: 1px;
-            border-radius: 1px; }
+    border-radius: 1px; }
     .another-cases__list a span {
       text-transform: unset;
       font-size: 1.1rem;
@@ -859,13 +937,14 @@ em {
       width: 16px;
       top: -webkit-calc(50% - 8px);
       top: calc(50% - 8px);
-      -webkit-background-size: cover;
       background-size: cover;
       background-image: url("../img/icon-link.svg"); }
 
+*:focus {
+  outline: none; }
+
 body {
-  background-color: #ffffff;
-  overflow: hidden; }
+  background-color: #ffffff; }
 
 ul {
   margin: 0;
@@ -882,17 +961,7 @@ a {
   padding: 0 2rem; }
 
 .wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   height: 100%; }
-
-.main {
-  width: -webkit-calc(100% - 5rem);
-  width: calc(100% - 5rem);
-  margin-left: 5rem;
-  background-color: #ffffff; }
 
 @media screen and (max-width: 995px) {
   .preview {

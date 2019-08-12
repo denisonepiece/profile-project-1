@@ -43,4 +43,4 @@ const animationNickName = function() {
   }, 1000);
 };
 
-animationNickName();
+// animationNickName();

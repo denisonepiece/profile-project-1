@@ -1,0 +1,50 @@
+.header {
+  height: 7rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-size: 1.5rem;
+  z-index: 1010;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    max-width: calc(1160px + 4rem);
+  }
+
+  a {
+    padding: 1rem 2rem;
+  }
+
+  a:hover {
+    color: $accent-text-color;
+  }
+}
+
+.nav {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  ul {
+    display: flex;
+
+    li {
+      &:last-child {
+        a {
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
