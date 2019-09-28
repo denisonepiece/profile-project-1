@@ -9,7 +9,12 @@
 
 body {
 	background-color: #ffffff;
-	overflow: hidden;
+	//overflow: hidden;
+}
+
+*::selection {
+  background: $primary-text-color;
+  color: #fff;
 }
 
 ul {

@@ -3,10 +3,7 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -602,13 +599,41 @@ em {
   background-image: url("../img/icon-github.svg"); }
 
 .about {
-  line-height: 1.8; }
+  padding-top: 2rem;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .about a {
     text-decoration: underline;
     font-weight: 600;
     color: #333333; }
     .about a:hover {
       text-decoration: none; }
+
+.about-content {
+  margin-left: 2rem; }
+  .about-content h2 {
+    margin-top: 1.7em; }
+    .about-content h2:first-child {
+      margin-top: 0; }
+
+.about-aside {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 29rem; }
+
+.photo {
+  height: 30rem;
+  float: left; }
 
 .span-custom {
   position: relative;
@@ -630,38 +655,21 @@ em {
             transform: rotate(-1.5deg);
     background-color: #333; }
 
-.soft-skill {
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-  .soft-skill h2 {
-    font-weight: 600;
-    font-size: 1.8rem; }
-
-.soft-skill__list {
-  font-size: 1.3rem;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+.photo-sub {
+  font-size: 1.5rem; }
 
 .soft-skill__item {
-  margin-right: 1rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   position: relative;
-  color: #333333;
+  color: #575757;
   padding: 0 1.5rem;
-  border: 2px solid #333333; }
+  border: 2px solid #575757; }
   .soft-skill__item:last-child {
     margin-right: 0; }
 
-.portfolio {
-  margin-top: 10rem; }
-  .portfolio h1 {
-    margin-bottom: 0; }
+.portfolio h1 {
+  margin-bottom: 0; }
 
 .sub-small {
   margin-top: 1rem;
@@ -839,8 +847,15 @@ em {
       background-image: url("../img/icon-link.svg"); }
 
 body {
-  background-color: #ffffff;
-  overflow: hidden; }
+  background-color: #ffffff; }
+
+*::-moz-selection {
+  background: #575757;
+  color: #fff; }
+
+*::selection {
+  background: #575757;
+  color: #fff; }
 
 ul {
   margin: 0;
