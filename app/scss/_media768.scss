@@ -1,25 +1,40 @@
-@media screen and (max-width: 768px){
-	html {
-		font-size: 8px;
-	}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
 
-	.another-cases__list {
-		display: flex;
-		flex-direction: column;
+  .another-cases__list {
+    display: flex;
+    flex-direction: column;
 
-		li {
-			margin-bottom: 2rem;
-			width: 100%;
-		}
-	}
+    li {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
 
-	.another-cases {
-		margin-bottom: 1rem;
-	}
+  .another-cases {
+    margin-bottom: 1rem;
+  }
 
-	.portfolio {
-		margin-top: 4rem;
-	}
+  .portfolio {
+    margin-top: 4rem;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about-aside {
+    margin-bottom: 2rem;
+    float: left;
+    margin-right: 2rem;
+    max-width: unset;
+  }
+
+  .about-content {
+    margin-left: 0;
+  }
 }
 
 
