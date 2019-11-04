@@ -32,7 +32,8 @@
 </svg>
 </a>
         <ul class="nav__list">
-          <li class="nav__item nav__item_active"><a href="#">Создать задание</a></li>
+          <!-- Для активного элемента меню добавить класс -is-active--->
+          <li class="nav__item"><a href="#">Создать задание</a></li>
           <li class="nav__item"><a href="#">Задания</a></li>
         </ul>
       </nav>
@@ -75,40 +76,24 @@
   </ul>
 </div>
         </div>
+        <div class="menu-btn"><span></span></div>
+      </div>
+      <!-- Меню дублируется, нужно прописать все ссылки-->
+      <div class="menu">
+        <div class="nav__item"><a href="#">Создать задание</a></div>
+        <div class="nav__item"><a href="#">Задания</a></div>
+        <div class="separator"></div>
+        <div class="nav__item"><a href="#">Профиль</a></div>
+        <div class="nav__item"><a href="#">Тарифы</a></div>
+        <div class="nav__item"><a href="#">Мои избранные</a></div>
+        <div class="nav__item"><a href="#">Настройки</a></div>
+        <div class="nav__item logout"><a href="#">Выход</a></div>
       </div>
     </header>
     <main class="main">
       <section class="another">
         <div class="container">
-          <h2 class="section__title">Another...</h2>
-          <div class="feedback">
-            <div class="feedback__photo"></div>
-            <div class="right"><span class="feedback__name">Денис Митряков</span>
-              <div class="rate">
-                <div class="rate__like">+69</div>
-                <div class="rate__dislike">0</div>
-              </div>
-              <p class="feedback__message">Он ваще красавчик, всё сделал за 5 сек, профессионально, качественно и всего за 100к</p>
-            </div>
-          </div><span class="tooltip">Сделай это, сделай то. Давай завтра.</span>
-          <div class="profile-person">
-            <div class="profile-person__photo"></div>
-            <div class="profile-person__info">
-              <div class="row">
-                <div class="profile-person__title">
-                  <h4 class="profile-person__name">Денис Митряков</h4>
-                  <p class="profile-person__city">Горно-Алтайск</p>
-                </div>
-                    <button class="button button_border button_default button_setting">
-                      Редактировать<svg class="icon-setting" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.3549 7.68251C12.3819 7.46376 12.3999 7.23626 12.3999 7.00001C12.3999 6.76376 12.3819 6.53626 12.3459 6.31751L13.8669 5.16251C13.9321 5.10937 13.9767 5.03607 13.993 4.95486C14.0094 4.87365 13.9967 4.78943 13.9569 4.71626L12.5169 2.29252C12.4269 2.13502 12.2379 2.08252 12.0759 2.13502L10.2849 2.83502C9.91304 2.5559 9.50443 2.32637 9.06997 2.15252L8.79997 0.297522C8.78695 0.214063 8.74335 0.137991 8.6772 0.083321C8.61104 0.0286512 8.52679 -0.000931843 8.43998 2.2384e-05H5.56002C5.47419 -0.000824521 5.39102 0.0290064 5.32631 0.0838502C5.26161 0.138694 5.21987 0.214731 5.20903 0.297522L4.93903 2.15252C4.5053 2.32782 4.09688 2.55724 3.72405 2.83502L1.93308 2.13502C1.85244 2.10479 1.76323 2.1041 1.6821 2.13308C1.60097 2.16205 1.53344 2.21872 1.49209 2.29252L0.0521154 4.71626C0.00758167 4.78827 -0.00786866 4.87378 0.0087595 4.95623C0.0253877 5.03868 0.0729098 5.11219 0.142114 5.16251L1.66309 6.31751C1.62709 6.53626 1.60009 6.77251 1.60009 7.00001C1.60009 7.22751 1.61809 7.46376 1.65409 7.68251L0.133114 8.83751C0.067862 8.89065 0.0233305 8.96395 0.00695172 9.04516C-0.00942705 9.12637 0.00333767 9.21059 0.0431155 9.28376L1.48309 11.7075C1.57309 11.865 1.76209 11.9175 1.92408 11.865L3.71505 11.165C4.08696 11.4441 4.49557 11.6737 4.93003 11.8475L5.20003 13.7025C5.23603 13.8775 5.38003 14 5.56002 14H8.43998C8.61997 14 8.77297 13.8775 8.79097 13.7025L9.06097 11.8475C9.4947 11.6722 9.90312 11.4428 10.2759 11.165L12.0669 11.865C12.2289 11.9263 12.4179 11.865 12.5079 11.7075L13.9479 9.28376C13.9924 9.21175 14.0079 9.12624 13.9912 9.04379C13.9746 8.96134 13.9271 8.88783 13.8579 8.83751L12.3549 7.68251ZM7 9.62501C5.51502 9.62501 4.30004 8.44376 4.30004 7.00001C4.30004 5.55626 5.51502 4.37501 7 4.37501C8.48498 4.37501 9.69996 5.55626 9.69996 7.00001C9.69996 8.44376 8.48498 9.62501 7 9.62501Z" fill="#CBCBCB"/>
-</svg>
-
-                    </button>
-              </div>
-              <div class="profile-person__tasks"><span class="profile-person__task"><b>69</b> Созданно заданий</span><span class="profile-person__task"><b>228</b> Выполненно заданий</span></div>
-            </div>
-          </div>
+          <h2 class="section__title">Another...</h2><span class="tooltip">Сделай это, сделай то. Давай завтра.</span>
 <div class="profile-contact">
   <div class="profile-contact__number">
     +7 (923) 667 98 65<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,6 +110,8 @@
   <div class="profile-contact__number">+7 (923) 667 98 65</div>
   <div class="profile-contact__skype">live:denchikslaziet</div>
   <div class="profile-contact__mail">denchikslez@milo.ua</div>
+  <div class="profile-contact__business">Улица Пушкина, д. Калатушкина</div>
+  <div class="profile-contact__business">ИНН: 93213124</div>
   <div class="bottom">
     <div class="social"><a href="#"><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.1951 0H3.06613C1.72029 0 0.619141 1.05085 0.619141 2.33522V18.6817C0.619141 19.9673 1.72029 21.017 3.06613 21.017H11.6306V12.8437H9.18362V9.95387H11.6306V7.56027C11.6306 5.03356 13.1135 3.2588 16.2383 3.2588L18.4443 3.26113V6.30275H16.9797C15.7636 6.30275 15.3011 7.17379 15.3011 7.98178V9.95504H18.443L17.7481 12.8437H15.3011V21.017H20.1951C21.5409 21.017 22.6421 19.9673 22.6421 18.6817V2.33522C22.6421 1.05085 21.5409 0 20.1951 0Z" fill="#3A559F"/>
@@ -139,16 +126,20 @@
   </div>
 </div>
           <div class="profile-rate">
-            <div class="profile-rate__role">Как исполнитель</div>
-                      <div class="rate">
-                        <div class="rate__like">+69</div>
-                        <div class="rate__dislike">0</div>
-                      </div>
-            <div class="profile-rate__role">Как заказчик</div>
-                      <div class="rate">
-                        <div class="rate__like">+69</div>
-                        <div class="rate__dislike">0</div>
-                      </div>
+            <div class="left">
+              <div class="profile-rate__role">Как исполнитель</div>
+                        <div class="rate">
+                          <div class="rate__like">+69</div>
+                          <div class="rate__dislike">0</div>
+                        </div>
+            </div>
+            <div class="right">
+              <div class="profile-rate__role">Как заказчик</div>
+                        <div class="rate">
+                          <div class="rate__like">+69</div>
+                          <div class="rate__dislike">0</div>
+                        </div>
+            </div>
           </div>
         </div>
       </section>

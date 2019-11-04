@@ -32,7 +32,8 @@
 </svg>
 </a>
         <ul class="nav__list">
-          <li class="nav__item nav__item_active"><a href="#">Создать задание</a></li>
+          <!-- Для активного элемента меню добавить класс -is-active--->
+          <li class="nav__item"><a href="#">Создать задание</a></li>
           <li class="nav__item"><a href="#">Задания</a></li>
         </ul>
       </nav>
@@ -75,6 +76,18 @@
   </ul>
 </div>
         </div>
+        <div class="menu-btn"><span></span></div>
+      </div>
+      <!-- Меню дублируется, нужно прописать все ссылки-->
+      <div class="menu">
+        <div class="nav__item"><a href="#">Создать задание</a></div>
+        <div class="nav__item"><a href="#">Задания</a></div>
+        <div class="separator"></div>
+        <div class="nav__item"><a href="#">Профиль</a></div>
+        <div class="nav__item"><a href="#">Тарифы</a></div>
+        <div class="nav__item"><a href="#">Мои избранные</a></div>
+        <div class="nav__item"><a href="#">Настройки</a></div>
+        <div class="nav__item logout"><a href="#">Выход</a></div>
       </div>
     </header>
     <main class="main">
@@ -155,12 +168,15 @@
                     <input class="input__field" placeholder="Ссылка Одноклассники" type="text">
                     <div class="input__message"></div>
                   </div>
-                      <button class="button button_border button_default">Сохранить</button>
-                      <button class="button button_border button_default button_cancel">Отмена</button>
+                  <div class="information-edit__buttons">
+                        <button class="button button_border button_default">Сохранить</button>
+                        <button class="button button_border button_default button_cancel">Отмена</button>
+                  </div>
                 </div>
               </div>
             </form>
             <div class="information-edit-about">
+              <!--На странице компании сменить заголовок на О Компании-->
               <h5>Обо мне</h5>
               <div class="textarea">
                 <textarea class="input__field textarea__field" placeholder="Информация о вас"></textarea><span class="textarea__counter">0/200</span>
