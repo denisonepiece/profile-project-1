@@ -3,7 +3,7 @@
 	height: 100vh;
 	width: 100%;
 	position: fixed;
-	display: none; //For work change on flex
+	display: flex; //For work change on flex
 	align-items: center;
 	z-index: 1000;
 	background-color: #fff;
