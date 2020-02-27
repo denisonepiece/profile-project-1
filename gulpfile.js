@@ -2,18 +2,11 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 
 gulp.task('sass', function() {
-  return gulp.src('app/scss/*.scss')
-      .pipe(sass({
-        includePaths: require('node-normalize-scss').includePaths,
-      }))
-      .pipe(autoprefixer({
-        browsers: ['last 15 version'],
-        cascade: true,
-      }))
+  return gulp.src('app/sass/*.sass')
+      .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('app/css'))
       .pipe(browserSync.stream());
 });
@@ -30,7 +23,7 @@ gulp.task('serve', function() {
     server: './',
   });
 
-  gulp.watch('app/scss/*.scss', gulp.series('sass'));
+  gulp.watch('app/sass/*.sass', gulp.series('sass'));
   gulp.watch(['*.html', 'app/js/**/*.js']).on('change', browserSync.reload);
 });
 
