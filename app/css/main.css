@@ -1,35 +1,5 @@
 html {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 400;
-  font-size: 10px; }
-
-h1, h2, h3, h4 {
-  line-height: 1.15em; }
-
-h1 {
-  font-size: 3rem; }
-
-h2 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 1rem; }
-
-p {
-  font-size: 1.7rem;
-  line-height: 1.4; }
-
-em {
-  font-weight: 600; }
-
-body {
-  background-color: #ffffff; }
-
-*::selection {
-  color: #fff; }
+  font-family: 'Comfortaa', sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -39,5 +9,5 @@ body {
   margin: 0 auto;
   padding: 0 2rem; }
 
-h1 {
-  margin-top: 8rem; }
+.container {
+  margin-top: 5rem; }
