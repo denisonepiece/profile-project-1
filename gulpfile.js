@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 
 gulp.task('sass', function() {
-  return gulp.src('app/sass/*.sass')
+  return gulp.src('app/sass/**/*.sass')
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('app/css'))
       .pipe(browserSync.stream());
@@ -23,8 +22,8 @@ gulp.task('serve', function() {
     server: './',
   });
 
-  gulp.watch('app/sass/*.sass', gulp.series('sass'));
-  gulp.watch(['*.html', 'app/js/**/*.js']).on('change', browserSync.reload);
+  gulp.watch('app/sass/**/*.sass', gulp.series('sass'));
+  gulp.watch(['./*.html', 'app/js/**/*.js']).on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.series('serve'));
