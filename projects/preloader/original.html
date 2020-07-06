@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  ​
+  <meta http-equiv="cache-control" content="max-age=0"/>
+  <meta http-equiv="cache-control" content="no-cache"/>
+  <meta http-equiv="expires" content="0"/>
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+  <meta http-equiv="pragma" content="no-cache"/>
+  ​
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  ​
+  <style type="text/css">
+    body {
+      background-color: #eff3f8;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+    }
+
+    .preloader-container {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      margin-bottom: 70px;
+    }
+
+    .logo img {
+      width: 110px;
+    }
+
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      animation-delay: 1s;
+    }
+
+    .mark {
+      position: absolute;
+      right: 2px;
+      color: #4db3a5;
+      font-size: 20px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      position: relative;
+      height: 35px;
+      color: #5c6873;
+      font-size: 17px;
+    }
+
+    .sk-fading-circle {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      margin: auto;
+      opacity: 0;
+    }
+    .sk-fading-circle .sk-circle {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .sk-fading-circle .sk-circle:before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 15%;
+      height: 15%;
+      background-color: #2ab4c0;
+      border-radius: 100%;
+      animation: sk-fading-circle-delay 1.2s infinite ease-in-out both;
+    }
+    .sk-fading-circle .sk-circle-2 {
+      transform: rotate(30deg);
+    }
+    .sk-fading-circle .sk-circle-3 {
+      transform: rotate(60deg);
+    }
+    .sk-fading-circle .sk-circle-4 {
+      transform: rotate(90deg);
+    }
+    .sk-fading-circle .sk-circle-5 {
+      transform: rotate(120deg);
+    }
+    .sk-fading-circle .sk-circle-6 {
+      transform: rotate(150deg);
+    }
+    .sk-fading-circle .sk-circle-7 {
+      transform: rotate(180deg);
+    }
+    .sk-fading-circle .sk-circle-8 {
+      transform: rotate(210deg);
+    }
+    .sk-fading-circle .sk-circle-9 {
+      transform: rotate(240deg);
+    }
+    .sk-fading-circle .sk-circle-10 {
+      transform: rotate(270deg);
+    }
+    .sk-fading-circle .sk-circle-11 {
+      transform: rotate(300deg);
+    }
+    .sk-fading-circle .sk-circle-12 {
+      transform: rotate(330deg);
+    }
+    .sk-fading-circle .sk-circle-2:before {
+      animation-delay: -1.1s;
+    }
+    .sk-fading-circle .sk-circle-3:before {
+      animation-delay: -1s;
+    }
+    .sk-fading-circle .sk-circle-4:before {
+      animation-delay: -0.9s;
+    }
+    .sk-fading-circle .sk-circle-5:before {
+      animation-delay: -0.8s;
+    }
+    .sk-fading-circle .sk-circle-6:before {
+      animation-delay: -0.7s;
+    }
+    .sk-fading-circle .sk-circle-7:before {
+      animation-delay: -0.6s;
+    }
+    .sk-fading-circle .sk-circle-8:before {
+      animation-delay: -0.5s;
+    }
+    .sk-fading-circle .sk-circle-9:before {
+      animation-delay: -0.4s;
+    }
+    .sk-fading-circle .sk-circle-10:before {
+      animation-delay: -0.3s;
+    }
+    .sk-fading-circle .sk-circle-11:before {
+      animation-delay: -0.2s;
+    }
+    .sk-fading-circle .sk-circle-12:before {
+      animation-delay: -0.1s;
+    }
+
+    @keyframes sk-fading-circle-delay {
+      0%, 39%, 100% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes show {
+      0%, 99% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes show-and-hide {
+      0% {
+        opacity: 0;
+      }
+
+      1%, 99% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .item .sk-fading-circle {
+      right: 0;
+    }
+
+    .item-1 .sk-fading-circle {
+      animation:7s show-and-hide 0s forwards ;
+    }
+
+    .item-1 .mark {
+      animation: show 7s forwards;
+    }
+
+    .item-2 .sk-fading-circle {
+      animation: 3s show-and-hide 7s forwards;
+    }
+
+    .item-2 .mark {
+      animation: show 10s forwards;
+    }
+
+    .item-3 .sk-fading-circle {
+      animation: 4s show-and-hide 10s forwards;
+    }
+
+    .item-3 .mark {
+      animation: show 14s forwards;
+    }
+
+    .item-4 .sk-fading-circle {
+      animation: 6s show-and-hide 14s forwards;
+    }
+
+    .item-4 .mark {
+      animation:show 20s forwards;
+    }
+
+    .item-5 .sk-fading-circle {
+      animation: show 20s forwards;
+    }
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      display: none;
+    }
+
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .page-404 {
+      margin: 70px 0 0;
+      text-align: center;
+    }
+
+    .sa-icon {
+      width: 80px;
+      height: 80px;
+      border: 4px solid #46b8da;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      position: relative;
+      box-sizing: content-box;
+    }
+
+    .sa-icon.sa-info::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 29px;
+      left: 50%;
+      bottom: 17px;
+      border-radius: 2px;
+      margin-left: -2px;
+      background-color: #5bc0de;
+    }
+
+    .sa-icon.sa-info::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin-left: -3px;
+      top: 19px;
+      background-color: #5bc0de;
+    }
+
+    .animateErrorIcon {
+      animation: animateErrorIcon 0.5s;
+    }
+
+    .page-404 .details {
+      display: inline-block;
+      padding-top: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    .uk-text-muted {
+      color: #999999 !important;
+    }
+
+    .margin-bottom-15 {
+      margin-bottom: 15px !important;
+    }
+
+    .page-404 .details .input-group {
+      margin: 0 auto;
+    }
+  </style>
+  <script>
+    let attno = 0;
+
+    const pollId = setInterval(function () {
+      $.ajax({
+        url: "/trial/check",
+        type: 'POST',
+        data: {'token': '$jobid', 'attno': attno},
+        success: function (data) {
+          if ('status' in data && 'token' in data && data['status'] == 'COMPLETE') {
+            location.replace('$protocol://$domain/api/auth/confirm?token=' + data['token']);
+            clearInterval(pollId);
+          } else {
+            ++attno;
+          }
+        },
+        error: function (data) {
+          $(".preloader-container").hide();
+          $("#err").show();
+          clearInterval(pollId);
+        }
+      });
+    }, 5000);
+  </script>
+</head>
+<body>
+
+<div class="preloader-container">
+  <div class="logo">
+    <img src="logo-default-new.png" alt="jeffit">
+  </div>
+  <div class="preloader">
+    <div class="item item-1">Регистрация доменного имени
+      <div class="sk-fading-circle">
+        <div class="sk-circle sk-circle-1"></div>
+        <div class="sk-circle sk-circle-2"></div>
+        <div class="sk-circle sk-circle-3"></div>
+        <div class="sk-circle sk-circle-4"></div>
+        <div class="sk-circle sk-circle-5"></div>
+        <div class="sk-circle sk-circle-6"></div>
+        <div class="sk-circle sk-circle-7"></div>
+        <div class="sk-circle sk-circle-8"></div>
+        <div class="sk-circle sk-circle-9"></div>
+        <div class="sk-circle sk-circle-10"></div>
+        <div class="sk-circle sk-circle-11"></div>
+        <div class="sk-circle sk-circle-12"></div>
+      </div>
+      <span class="mark">✔</span>
+    </div>
+    <div class="item item-2">Создание базы данных
+      <div class="sk-fading-circle">
+        <div class="sk-circle sk-circle-1"></div>
+        <div class="sk-circle sk-circle-2"></div>
+        <div class="sk-circle sk-circle-3"></div>
+        <div class="sk-circle sk-circle-4"></div>
+        <div class="sk-circle sk-circle-5"></div>
+        <div class="sk-circle sk-circle-6"></div>
+        <div class="sk-circle sk-circle-7"></div>
+        <div class="sk-circle sk-circle-8"></div>
+        <div class="sk-circle sk-circle-9"></div>
+        <div class="sk-circle sk-circle-10"></div>
+        <div class="sk-circle sk-circle-11"></div>
+        <div class="sk-circle sk-circle-12"></div>
+      </div>
+      <span class="mark">✔</span>
+    </div>
+    <div class="item item-3">Выделение хранилища файлов
+      <div class="sk-fading-circle">
+        <div class="sk-circle sk-circle-1"></div>
+        <div class="sk-circle sk-circle-2"></div>
+        <div class="sk-circle sk-circle-3"></div>
+        <div class="sk-circle sk-circle-4"></div>
+        <div class="sk-circle sk-circle-5"></div>
+        <div class="sk-circle sk-circle-6"></div>
+        <div class="sk-circle sk-circle-7"></div>
+        <div class="sk-circle sk-circle-8"></div>
+        <div class="sk-circle sk-circle-9"></div>
+        <div class="sk-circle sk-circle-10"></div>
+        <div class="sk-circle sk-circle-11"></div>
+        <div class="sk-circle sk-circle-12"></div>
+      </div>
+      <span class="mark">✔</span>
+    </div>
+    <div class="item item-4">Регистрация учетной записи
+      <div class="sk-fading-circle">
+        <div class="sk-circle sk-circle-1"></div>
+        <div class="sk-circle sk-circle-2"></div>
+        <div class="sk-circle sk-circle-3"></div>
+        <div class="sk-circle sk-circle-4"></div>
+        <div class="sk-circle sk-circle-5"></div>
+        <div class="sk-circle sk-circle-6"></div>
+        <div class="sk-circle sk-circle-7"></div>
+        <div class="sk-circle sk-circle-8"></div>
+        <div class="sk-circle sk-circle-9"></div>
+        <div class="sk-circle sk-circle-10"></div>
+        <div class="sk-circle sk-circle-11"></div>
+        <div class="sk-circle sk-circle-12"></div>
+      </div>
+      <span class="mark">✔</span>
+    </div>
+    <div class="item item-5">Завершение
+      <div class="sk-fading-circle">
+        <div class="sk-circle sk-circle-1"></div>
+        <div class="sk-circle sk-circle-2"></div>
+        <div class="sk-circle sk-circle-3"></div>
+        <div class="sk-circle sk-circle-4"></div>
+        <div class="sk-circle sk-circle-5"></div>
+        <div class="sk-circle sk-circle-6"></div>
+        <div class="sk-circle sk-circle-7"></div>
+        <div class="sk-circle sk-circle-8"></div>
+        <div class="sk-circle sk-circle-9"></div>
+        <div class="sk-circle sk-circle-10"></div>
+        <div class="sk-circle sk-circle-11"></div>
+        <div class="sk-circle sk-circle-12"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="err">
+  <div class="page-content-inner">
+    <div class="row">
+      <div class="col-md-12 page-404">
+        <div class="sa-icon sa-info animateErrorIcon"></div>
+        <div class="details">
+          <h3> Ваша заявка принята </h3>
+          <div class="uk-text-muted margin-bottom-15"> Наш менеджер свяжется с Вами в ближайшее время для уточнения
+            деталей
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+​
+</body>
+</html>
