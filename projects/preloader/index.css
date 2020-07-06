@@ -7,13 +7,29 @@ body {
   color: #5c6873;
 }
 
+.preloader-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 70px;
+}
+
+.logo img {
+  width: 110px;
+}
+
 .preloader {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
   animation-delay: 1s;
 }
 
@@ -37,6 +53,7 @@ body {
   height: 20px;
   position: absolute;
   margin: auto;
+  opacity: 0;
 }
 .sk-fading-circle .sk-circle {
   width: 100%;
@@ -151,6 +168,19 @@ body {
   }
 }
 
+@keyframes show-and-hide {
+  0% {
+    opacity: 0;
+  }
+
+  1%, 99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 .item .sk-fading-circle {
   right: 0;
@@ -159,7 +189,7 @@ body {
 /* delay */
 
 .item-1 .sk-fading-circle {
-  animation: hidden 7s forwards;
+  animation:7s show-and-hide 0s forwards ;
 }
 
 .item-1 .mark {
@@ -167,7 +197,7 @@ body {
 }
 
 .item-2 .sk-fading-circle {
-  animation: hidden 10s forwards;
+  animation: 3s show-and-hide 7s forwards;
 }
 
 .item-2 .mark {
@@ -175,7 +205,7 @@ body {
 }
 
 .item-3 .sk-fading-circle {
-  animation: hidden 14s forwards;
+  animation: 4s show-and-hide 10s forwards;
 }
 
 .item-3 .mark {
@@ -183,10 +213,14 @@ body {
 }
 
 .item-4 .sk-fading-circle {
-  animation: hidden 20s forwards;
+  animation: 6s show-and-hide 14s forwards;
 }
 
 .item-4 .mark {
+  animation:show 20s forwards;
+}
+
+.item-5 .sk-fading-circle {
   animation: show 20s forwards;
 }
 
