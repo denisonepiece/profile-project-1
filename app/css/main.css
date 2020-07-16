@@ -1,5 +1,17 @@
 html {
-  font-family: 'Source Code Pro', sans-serif; }
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 10px; }
+
+body {
+  font-size: 1.6rem; }
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 9px; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -285,21 +297,31 @@ template, [hidden] {
   box-sizing: border-box; }
 
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   margin: 0 auto;
-  padding: 0 2rem; }
-
-.container {
-  margin-top: 5rem; }
+  padding: 0 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
 .about {
   display: flex; }
   .about .text {
-    margin-left: 33px; }
+    margin-left: 3.3rem; }
   .about h1 {
     margin-top: 0px; }
   .about img {
-    max-width: 333px; }
+    max-width: 33.3rem; }
 
 .socials {
-  margin-top: 7.77px; }
+  margin-top: 0.777rem; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 36rem; }
+  .about {
+    flex-direction: column; }
+    .about .text {
+      margin-left: 0; }
+    .about img {
+      margin-bottom: 50px;
+      max-width: 250px; } }

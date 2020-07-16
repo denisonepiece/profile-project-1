@@ -5,28 +5,42 @@
   box-sizing: border-box
 
 .container
-  max-width: 800px
+  max-width: 80rem
   margin: 0 auto
   padding: 0 2rem
-
-.container
   margin-top: 5rem
+  margin-bottom: 5rem
+  
 
 .about 
   display: flex 
 
   .text
-    margin-left: 33px
+    margin-left: 3.3rem
 
   h1
     margin-top: 0px
 
   img
-    max-width: 333px
+    max-width: 33.3rem
 
 .socials 
-  margin-top: 7.77px
+  margin-top: 0.777rem
 
 
+@media screen and ( max-width: 768px)
+  .container
+    max-width: 36rem
 
+  .about
+    flex-direction: column
+
+    .text 
+      margin-left: 0
+
+    img 
+      margin-bottom: 50px
+      max-width: 250px
+  
+  
 
